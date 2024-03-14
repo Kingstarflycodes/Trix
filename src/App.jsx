@@ -6,6 +6,7 @@ import iPhone from './assets/img/iPhone.png'
 import charOne from './assets/img/game_img.png'
 import charTwo from './assets/img/game_img2.png'
 import charThree from './assets/img/game_img3.png'
+import charFour from './assets/img/game_img4.png'
 
 function App() {
   const [count, setCount] = useState(0)
@@ -97,18 +98,69 @@ function App() {
         </div>
 
         <div className="how">
-          <h1>How it works</h1>
-          <div className="how-first-child">
-            <div className="list-dot"></div>
-            <div className="desc-cont">
-              <p>Initiate Transactions with Ease</p>
-              <p>Start your gaming journey by exploring the marketplace.</p>
-              <p>Trix allows you to make transactions even with a zero wallet balance.</p>
+          <h1 className="sedgwick-ave">How it works</h1>
+          <div className="how-child-cont">
+            <div className="how-first-child">
+              <div className="how-desc-list">
+                <div className="list-dot"></div>
+                <div className="desc-cont">
+                  <p className="sedgwick-ave-regular">Initiate Transactions with Ease</p>
+                  <p>Start your gaming journey by exploring the marketplace.</p>
+                  <p>Trix allows you to make transactions even with a zero wallet balance.</p>
+                </div>
+              </div>
+              <div className="how-desc-list">
+                <div className="list-dot"></div>
+                <div className="desc-cont">
+                  <p className="sedgwick-ave-regular">Flexible Payment Options</p>
+                  <p>Choose your preferred payment method - fund your wallet through trusted<br />traders or opt for secure card payments via dedicated links.</p>
+                </div>
+              </div>
+              <div className="how-desc-list">
+                <div className="list-dot"></div>
+                <div className="desc-cont">
+                  <p className="sedgwick-ave-regular">Transparent Confirmation</p>
+                  <p>Confirm your transactions seamlessly on the Trix platform</p>
+                  <p>Trix notifies the respective vendor with all transaction details</p>
+                </div>
+              </div>
+              <div className="how-desc-list">
+                <div className="list-dot"></div>
+                <div className="desc-cont">
+                  <p className="sedgwick-ave-regular">Swift Product Fulifillment</p>
+                  <p>Your chosen vendor promptly fulfills the transaction, ensuring a seamless<br />delivery of digital goods & products.</p>
+                </div>
+              </div>
+              <div className="how-desc-list">
+                <div className="list-dot"></div>
+                <div className="desc-cont">
+                  <p className="sedgwick-ave-regular">Receive Detailed Receipts</p>
+                  <p>Trix sends you a detailed receipt for every transaction,<br />keeping you informed at every step.</p>
+                </div>
+              </div>
+            </div>
+            <div className="how-second-child">
+              <div className="purple-box"></div>
+              <img className="char-four" src={charFour} />
             </div>
           </div>
-          <div className="how-second-child">
-            
-          </div>
+        </div>
+
+        <div className="faq">
+          <h1 className="sedgwick-ave faq-title">Frequently Asked<br />Questions</h1>
+          <p className="sedgwick-ave faq-what">What is Trix?</p>
+          <p className="faq-desc">Trix is a dynamic gaming commerce platform in Nigeria<br />that connects gamers, buyers, and sellers. It offers a<br />diverse marketplace for various gaming services, from<br />airtime and data top-ups to gift cards and buy-and-sell<br />opportunities.</p>
+          <ul className="sedgwick-ave">
+            <li>How do I create an account on Trix?</li>
+            <li>What services are available on Trix?</li>
+            <li>Can I initiate transactions with zero wallet balance?</li>
+            <li>How does the reward system work on Trix?</li>
+            <li>What payment options are available on Trix?</li>
+            <li>How does Trix ensure secure transactions?</li>
+            <li>What happens after I confirm a transaction on Trix?</li>
+            <li>Why do I receive promotions and updates from Trix?</li>
+            <li>How can I contact Trix for support or inquiries?</li>
+          </ul>
         </div>
       </main>
     </body>
@@ -116,3 +168,4 @@ function App() {
 }
 
 export default App
+
