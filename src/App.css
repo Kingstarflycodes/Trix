@@ -316,6 +316,7 @@ li {
 
 .faq {
   text-align: center;
+  position: relative;
 }
 
 .faq-title {
@@ -340,4 +341,24 @@ li {
   font-size: 1.8rem;
   margin-top: 2rem;
   cursor: pointer;
+}
+
+.char-five {
+  width: 23rem;
+  position: absolute;
+  left: -3rem;
+  bottom: -6rem;
+}
+
+.char-six {
+  width: 23rem;
+  position: absolute;
+  right: -3rem;
+  bottom: -6rem;
+}
+
+.footer {
+  background-color: #662ab2;
+  text-align: center;
+  margin-top: 10rem;
 }

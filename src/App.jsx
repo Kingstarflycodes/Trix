@@ -7,6 +7,8 @@ import charOne from './assets/img/game_img.png'
 import charTwo from './assets/img/game_img2.png'
 import charThree from './assets/img/game_img3.png'
 import charFour from './assets/img/game_img4.png'
+import charFive from './assets/img/game_img5.png'
+import charSix from './assets/img/game_img6.png'
 
 function App() {
   const [count, setCount] = useState(0)
@@ -161,11 +163,22 @@ function App() {
             <li>Why do I receive promotions and updates from Trix?</li>
             <li>How can I contact Trix for support or inquiries?</li>
           </ul>
+          <img className="char-five" src={charFive} />
+          <img className="char-six" src={charSix} />
+        </div>
+
+        <div className="footer sedgwick-ave">
+          <p>Explore Trix</p>
+          <p>Home | About Us | FAQ |</p>
+          <p>Privacy policy | Terms of Service |</p>
+          <p>Contact us | Customer Support |</p>
+          <p> Follow us on social media: </p>
+          <p>@2024 Trix. All rights reserved.</p>
         </div>
       </main>
     </body>
   )
-}
+} 
 
 export default App
 
