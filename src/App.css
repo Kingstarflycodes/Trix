@@ -360,5 +360,22 @@ li {
 .footer {
   background-color: #662ab2;
   text-align: center;
-  margin-top: 10rem;
+  margin-top: 6rem;
+  color: #ffffff;
+  width: 107.5%;
+  padding: 2rem 0;
+  position: relative;
+  left: -3rem;
+}
+
+.footer p {
+  font-size: 2rem;
+  margin: 2.5rem 0;
+}
+
+.char-seven {
+  width: 18rem;
+  position: absolute;
+  left: 6rem;
+  bottom: 0;
 }

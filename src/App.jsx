@@ -9,6 +9,7 @@ import charThree from './assets/img/game_img3.png'
 import charFour from './assets/img/game_img4.png'
 import charFive from './assets/img/game_img5.png'
 import charSix from './assets/img/game_img6.png'
+import charSeven from './assets/img/game_img7.png'
 
 function App() {
   const [count, setCount] = useState(0)
@@ -174,6 +175,7 @@ function App() {
           <p>Contact us | Customer Support |</p>
           <p> Follow us on social media: </p>
           <p>@2024 Trix. All rights reserved.</p>
+          <img className="char-seven" src={charSeven} />
         </div>
       </main>
     </body>
