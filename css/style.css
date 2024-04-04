@@ -1,0 +1,386 @@
+@import url('https://fonts.googleapis.com/css2?family=Sedgwick+Ave+Display&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Sedgwick+Ave&family=Sedgwick+Ave+Display&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #f6f8f3;
+  min-width: 320px;
+  min-height: 100vh;
+  padding: 0 1.5rem;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+li {
+  list-style: none;
+}
+
+.sedgwick-ave {
+  font-family: "Sedgwick Ave Display", cursive;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.sedgwick-ave-regular {
+  font-family: "Sedgwick Ave", cursive;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.btn {
+  padding: .9rem 2.5rem;
+  font-size: 1.3rem;
+  border: none;
+  cursor: pointer;
+  background-color: transparent;
+}
+
+.trix-logo {
+  width: 8rem;
+  height: 4rem;
+}
+
+.nav-bar {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav-menu {
+  width: 55%;
+}
+
+.nav-menu ul {
+  display: flex;
+  justify-content: space-between;
+  padding: 2rem;
+  align-items: center;
+  font-size: 1.3rem;
+}
+
+.nav-menu ul li {
+  cursor: pointer;
+}
+
+.get-started {
+  background-color: #662ab2;
+  color: #ffffff;
+  border-radius: .3rem;
+}
+
+.main {
+  width: 100%;
+  margin: 3.5rem 0 0 0;
+}
+
+.head-session {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  padding: 0 2rem;
+}
+
+.head-title {
+  font-size: 2rem;
+  word-spacing: .3rem;
+}
+
+.head-text-one {
+  font-size: 1.8rem;
+  margin-top: 1.2rem;
+}
+
+.head-text-two {
+  font-size: 1.1rem;
+  margin-top: 1rem;
+}
+
+.head-analysis {
+  display: flex;
+  margin-top: 1rem;
+}
+
+.head-details {
+  position: relative;
+}
+
+.users {
+  padding: 0 1rem 0 0;
+  border-right: 1px solid #000000;
+}
+
+.downloaded {
+  padding: 0 1rem;
+}
+
+.head-num {
+  font-size: 2rem;
+  font-weight: bolder;
+}
+
+.head-num-desc {
+  font-size: 1.1rem;
+  opacity: .6;
+}
+
+.head-btns {
+  margin-top: 1.5rem;
+}
+
+.char-one {
+  width: 20rem;
+  position: absolute;
+  right: -8rem;
+  bottom: -8.5rem;
+}
+
+.phone {
+  position: relative;
+}
+
+.whatsapp-chat {
+  position: absolute;
+  right: 3.9rem;
+  top: -.5rem;
+  height: 47rem;
+}
+
+.iphone {
+  position: absolute;
+  right: 2rem;
+  top: -.5rem;
+  height: 50rem;
+}
+
+.second-session {
+  width: 107.5%;
+  background-image: url(../React/src/assets/img/sec-session-bg.png);
+  padding: 6rem 4rem 0 0;
+  height: 42rem;
+  background-position: center;
+  background-size: cover;
+  position: relative;
+  left: -3rem;
+  margin-top: 8.5rem;
+  color: white;
+}
+
+.second-session::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background-color: #000000;
+  opacity: .5;
+}
+
+.stay-connected, .sc-desc {
+  text-align: center;
+  font-size: 2.4rem;
+  position: relative;
+  z-index: 1;
+}
+
+.stay-connected {
+  margin-bottom: 2rem;
+  font-size: 3rem;
+}
+
+.sec-session-join {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 80%;
+  padding: 3rem;
+  background-color: rgba(0, 0, 0, .4);
+  border-radius: .5rem;
+  margin-left: 6rem;
+  padding-right: 5rem;
+  margin-top: 2rem;
+}
+
+.ssj-desc {
+  font-size: 1.4rem;
+}
+
+.char-two {
+  position: absolute;
+  width: 24rem;
+  right: -12rem;
+  top: -2rem;
+}
+
+.discover-session {
+  margin-top: 6rem;
+}
+
+.discover-trix {
+  font-size: 3rem;
+  text-align: center;
+}
+
+.discover-desc {
+  text-align: center;
+  margin-top: 1rem;
+  font-size: 1.5rem;
+}
+
+.first-dis-ul, .second-dis-ul {
+  margin-top: 3rem;
+  display: flex;
+  justify-content: space-between;
+  font-size: 1rem;
+  text-align: center;
+  padding: 0 3.5rem;
+}
+
+.first-dis-ul li p:first-child, .second-dis-ul li p:first-child {
+  font-weight: 600;
+  margin-bottom: 1rem;
+}
+
+.second-dis-ul .char-three {
+  width: 9rem;
+  margin: -3rem -4rem 0 -3rem;
+}
+
+.how h1 {
+  font-size: 2.8rem;
+  text-align: center;
+}
+
+.how-child-cont {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 2rem;
+}
+
+.how-first-child {
+  width: 60%;
+}
+
+.how-desc-list {
+  display: flex;
+  align-items: flex-start;
+  margin: 2rem;
+}
+
+.list-dot {
+  width: 1rem;
+  height: 1rem;
+  background-color: #000000;
+  border-radius: 50%;
+  margin-top: .5rem;
+}
+
+.desc-cont {
+  margin-left: 2.5rem;
+}
+
+.desc-cont p:first-child {
+  font-size: 1.8rem;
+  font-weight: lighter;
+  word-spacing: .5rem;
+  letter-spacing: .1rem;
+}
+
+.desc-cont p:not(:first-child) {
+  font-size: 1.15rem;
+  margin: .1rem 0 .1rem 2rem;
+}
+
+.desc-cont p:nth-child(2) {
+  margin-top: .8rem;
+}
+
+.purple-box {
+  width: 30rem;
+  height: 20rem;
+  background-color: #662ab2;
+  border-radius: .5rem;
+}
+
+.char-four {
+  width: 33rem;
+  margin: -2rem 0 0 -8.5rem;
+}
+
+.faq {
+  text-align: center;
+  position: relative;
+}
+
+.faq-title {
+  font-size: 3.8rem;
+  margin: -2rem 0 1rem 0;
+}
+
+.faq-what {
+  font-size: 2rem;
+  margin: 2rem 0;
+}
+
+.faq-desc {
+  font-size: 2rem;
+}
+
+.faq ul {
+  margin-top: 3rem;
+}
+
+.faq ul li {
+  font-size: 1.8rem;
+  margin-top: 2rem;
+  cursor: pointer;
+}
+
+.char-five {
+  width: 23rem;
+  position: absolute;
+  left: -3rem;
+  bottom: -6rem;
+}
+
+.char-six {
+  width: 23rem;
+  position: absolute;
+  right: -3rem;
+  bottom: -6rem;
+}
+
+.footer {
+  background-color: #662ab2;
+  text-align: center;
+  margin-top: 6rem;
+  color: #ffffff;
+  width: 107.5%;
+  padding: 2rem 0;
+  position: relative;
+  left: -3rem;
+}
+
+.footer p {
+  font-size: 2rem;
+  margin: 2.5rem 0;
+}
+
+.char-seven {
+  width: 18rem;
+  position: absolute;
+  left: 6rem;
+  bottom: 0;
+}
+
+.social-med i {
+    margin: 0 .5rem;
+    font-size: 2.5rem;
+}
