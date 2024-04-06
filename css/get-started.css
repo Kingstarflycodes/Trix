@@ -1,4 +1,27 @@
+@import url('https://fonts.googleapis.com/css2?family=Sedgwick+Ave+Display&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Sedgwick+Ave&family=Sedgwick+Ave+Display&display=swap');
+
 * {
     margin: 0;
     padding: 0;
 }
+
+body {
+    background-image: url("../React/src/assets/img/page_bg.png");
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+    height: auto;
+}
+
+.sedgwick-ave {
+    font-family: "Sedgwick Ave Display", cursive;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+  .sedgwick-ave-regular {
+    font-family: "Sedgwick Ave", cursive;
+    font-weight: 400;
+    font-style: normal;
+  }
