@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Sedgwick+Ave+Display&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Sedgwick+Ave&family=Sedgwick+Ave+Display&display=swap');
-
+/* clear defaults */
 * {
   margin: 0;
   padding: 0;
@@ -13,6 +13,7 @@ body {
   min-height: 100vh;
   padding: 0 1.5rem;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  overflow-x: hidden;
 }
 
 li {
