@@ -29,7 +29,7 @@
 
 <body>
   <div class="main-container">
-    <section class="navbar">
+    <header class="navbar">
     <nav class="nav-bar">
       <img class='trix-logo' src="./img/Trix.png" />
       <div class="nav-menu">
@@ -51,7 +51,7 @@
         </ul>
       </div>
     </nav>
-  </section>
+    </header>
 
     <main class="main">
       
@@ -75,12 +75,13 @@
             <button class="get-started btn">Get Started</button>
             <button class='btn'>How it works</button>
           </div>
-          <img class="char-one" src="./img/game_img.png" />
+          <img class="char-one" loading="eager" src="./img/game_img.png" />
         </div>
-        <div class="phone">
-          <img class='whatsapp-chat' src="./img/whatsapp_img.png" />
-          <img class='iphone' src="./img/iPhone.png" />
-        </div>
+        <figure class="phone" >
+          <!-- Had to make the images on top of viewport to download first before others so site opens up more quickly, the others can load up much later. -->
+          <img class='whatsapp-chat' loading="eager" src="./img/whatsapp_img.png" /> 
+          <img class='iphone' loading="eager" src="./img/iPhone.png" />
+        </figure>
       </section>
 
       <section class="second-session">
@@ -92,7 +93,7 @@
           <p class='ssj-desc'>Ready to embark on the ultimate gaming adventure? Join<br />Trix today, where every click
             opens a door to gamin<br />bliss. Let the games begin! &#128640;&#127918;</p>
           <button class="get-started btn">Get Started</button>
-          <img class='char-two' src="./img/game_img2.png" />
+          <img class='char-two' loading="lazy" src="./img/game_img2.png" />
         </div>
       </section>
 
@@ -128,7 +129,7 @@
           </li>
         </ul>
         <ul class="second-dis-ul">
-          <img class="char-three" src="./img/game_img3.png" />
+          <img class="char-three" loading="lazy" src="./img/game_img3.png" />
           <li>
             <article>
             <p>&#x1F6E1; Secure and Transparent Transactions</p>
@@ -200,10 +201,10 @@
               </div>
             </div>
           </div>
-          <div class="how-second-child">
+          <figure class="how-second-child">
             <div class="purple-box"></div>
-            <img class="char-four" src="./img/game_img4.png" />
-          </div>
+            <img class="char-four" loading="lazy" src="./img/game_img4.png" />
+          </figure>
         </div>
       </section>
 
@@ -224,8 +225,8 @@
           <li>Why do I receive promotions and updates from Trix?</li>
           <li>How can I contact Trix for support or inquiries?</li>
         </ul>
-        <img class="char-five" src="./img/game_img5.png" />
-        <img class="char-six" src="./img/game_img6.png" />
+        <img class="char-five" loading="lazy" src="./img/game_img5.png" />
+        <img class="char-six" loading="lazy" src="./img/game_img6.png" />
       </section>
 
       <footer class="footer sedgwick-ave">
@@ -237,7 +238,7 @@
             class="fa-brands fa-discord"></i><i class="fa-brands fa-x-twitter"></i><i
             class="fa-brands fa-instagram"></i><i class="fa-brands fa-tiktok"></i></p>
         <p>@2024 Trix. All rights reserved.</p>
-        <img class="char-seven" src="./img/game_img7.png" />
+        <img loading="lazy" class="char-seven" src="./img/game_img7.png" />
       </footer>
     </main>
   </div>
