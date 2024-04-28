@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/src/output.css" />
+    <script defer src="/src/pages/routes.js"></script>
+    <title>Route - Get ID</title>
+  </head>
+  <body class="overflow-x-hidden w-screen lg:px-10 lg:pt-6">
+    <!-- <header
+      class="header-paddings bg-black text-white rounded-lg flex items-center lg:gap-8">
+      <img src="/svg/trix-logo.svg" width="99" height="30" alt="trix logo" />
+      <nav class="flex items-center justify-between">
+        <ul class="flex items-center gap-6">
+          <li>Careers</li>
+          <li>Support</li>
+          <li>About Us</li>
+        </ul>
+      </nav>
+      <div class="ml-auto flex items-center gap-4">
+        <img src="/svg/trix-chat.svg" alt="trix chat" />
+        <img src="/svg/whatsapp.svg" alt="whatsapp logo" />
+      </div>
+    </header> -->
+    <div
+      class="lg:w-[85%] hidden lg:block lg:h-[28vh] absolute top-0 left-1/2 -translate-x-1/2 -z-10 bg-pale"></div>
+
+    <header
+      class="header-paddings bg-black text-white lg:rounded-lg flex items-center lg:gap-8 w-full">
+      <a href="/src/pages/home.html">
+        <img src="/svg/trix-logo.svg" width="99" height="30" alt="trix logo" />
+      </a>
+
+      <nav class="hidden lg:flex items-center justify-between">
+        <ul class="flex items-center gap-6 [&_li]:cursor-pointer">
+          <li class="text-gray-500">
+            <a href="/src/pages/career.html">Careers</a>
+          </li>
+          <li class="text-gray-500">
+            <a href="/src/pages/support.html">Support</a>
+          </li>
+          <li class="text-gray-500">
+            <a href="/src/pages/about.html">About Us</a>
+          </li>
+        </ul>
+      </nav>
+
+      <div class="ml-auto hidden lg:flex items-center gap-4">
+        <img src="/svg/trix-chat.svg" alt="trix chat" />
+        <img src="/svg/whatsapp.svg" alt="whatsapp logo" />
+      </div>
+    </header>
+
+    <!-- <div
+      class="w-[85%] h-[25vh] absolute top-0 left-1/2 -translate-x-1/2 -z-10 bg-pale"></div> -->
+
+    <div class="px-3 lg:hidden bg-pale text-white py-4 w-[90%] mx-auto">
+      <!-- <ul class="font-medium flex items-center gap-6">
+        <li>Why You Might Love It Here</li>
+        <li>Joining Trix</li>
+        <li>Open Positions</li>
+      </ul> -->
+    </div>
+
+    <main class="mt-20 mb-10">
+      <h1 class="text-3xl font-semibold text-center uppercase mb-4">
+        claim your trix id
+      </h1>
+      <article
+        class="flex justify-center overflow-x-scroll paddings bg-pale gap-6 items-end [&_img]:border-white [&_img]:border-8 [&_img]:rounded-full">
+        <div>
+          <img
+            width="138.67px"
+            height="138.67px"
+            src="/img/avatar-image-1.png"
+            alt="avatar image" />
+          <h2 class="text-lg font-semibold text-center mt-4">ShadowBlade87</h2>
+        </div>
+        <div>
+          <img
+            width="138.67px"
+            height="138.67px"
+            src="/img/avatar-image-2.png"
+            alt="avatar image" />
+          <h2 class="text-lg font-semibold text-center mt-4">
+            PhoenixRising23
+          </h2>
+        </div>
+        <div>
+          <img
+            width="138.67px"
+            height="138.67px"
+            src="/img/avatar-image-3.png"
+            alt="avatar image" />
+          <h2 class="text-lg font-semibold text-center mt-4">
+            ThunderStrike99
+          </h2>
+        </div>
+        <img
+          width="198.3px"
+          height="198.3px"
+          src="/img/avatar-image-4.png"
+          alt="avatar image" />
+        <div>
+          <img
+            width="138.67px"
+            height="138.67px"
+            src="/img/avatar-image-5.png"
+            alt="avatar image" />
+          <h2 class="text-lg font-semibold text-center mt-4">MysticGamerx</h2>
+        </div>
+        <div>
+          <img
+            width="138.67px"
+            height="138.67px"
+            src="/img/avatar-image-6.png"
+            alt="avatar image" />
+          <h2 class="text-lg font-semibold text-center mt-4">BlazeRunner64</h2>
+        </div>
+        <div>
+          <img
+            width="138.67px"
+            height="138.67px"
+            src="/img/avatar-image-7.png"
+            alt="avatar image" />
+          <h2 class="text-lg font-semibold text-center mt-4">FrostByte88</h2>
+        </div>
+      </article>
+
+      <form
+        class="form lg:w-[25vw] w-full rounded-lg lg:-mt-8 p-4 mt-8 bg-white mx-auto flex items-center flex-col gap-4 [&_input]:rounded-md [&_input]:bg-white [&_input]:p-2">
+        <div
+          class="flex items-center w-full rounded-lg p-2 border border-black">
+          <span
+            class="px-2 py-1 uppercase text-white text-xl bg-black rounded-md"
+            >id</span
+          >
+          <input
+            class="w-full ml-2 input1"
+            type="text"
+            name="location"
+            placeholder="Enter location"
+            required />
+          <input
+            class="w-full ml-2 input2 hidden"
+            type="tel"
+            name="phone"
+            placeholder="Enter Phone No"
+            required />
+          <input
+            class="w-full ml-2 input3 hidden"
+            type="text"
+            name="username"
+            placeholder="Enter your preferred username"
+            required />
+        </div>
+
+        <button
+          class="px-2 py-1 uppercase text-white text-xl bg-black rounded-md next">
+          NEXT
+        </button>
+        <button
+          class="px-2 py-1 uppercase text-white text-xl bg-black rounded-md claim hidden">
+          CLAIM
+        </button>
+        <p class="text-center hidden pText">your username is your ID</p>
+      </form>
+
+      <!-- <dialog class="message bg-darkbg"> -->
+      <!-- absolute hidden w-screen h-full top-0 left-0 bg-darkbg z-10  -->
+      <dialog
+        class="rounded-lg bg-white w-[50vw] p-6 text-center space-y-6">
+        <h2 class="text-3xl font-semibold">You are all set!</h2>
+        <p>
+          Congratulations on creating your Trix user ID ! As a token of
+          appreciation, we're excited to offer you a special reward that you can
+          claim on Trix platform WhatsApp using the following code: 01101
+        </p>
+        <div>
+          <div><b>USER ID :</b> <span class="userId"></span></div>
+          <div><b>REWARD CODE :</b> <span>01101</span></div>
+        </div>
+        <!-- <a href="/src/pages/profile.html"> -->
+        <button
+          class="modalClaim px-2 py-1 uppercase text-white text-xl bg-black rounded-md claim">
+          CLAIM
+        </button>
+        <!-- </a> -->
+      </dialog>
+      <!-- </dialog> -->
+    </main>
+
+    <div class="w-[85%] h-[10vh] mx-auto bg-pale"></div>
+  </body>
+</html>
