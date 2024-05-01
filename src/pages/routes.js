@@ -20,13 +20,13 @@ function isFilled() {
   nextBtn.classList.add('hidden');
   pText.classList.remove('hidden');
   claimBtn.classList.remove('hidden');
+  
   if (!userName.value) return;
 }
 
 function handleSubmit(e) {
   e.preventDefault();
   modal.showModal();
-  // console.log(`${userLocation.value} ${userPhone.value} ${userName.value}`);
   let userNameValue = userName.value;
   userId.textContent = `${userNameValue}`;
 
@@ -40,7 +40,6 @@ nextBtn.addEventListener('click', () => isFilled());
 modalClaim.addEventListener('click', () => {
   modal.close();
   setTimeout(() => {
-    window.location.href = '/src/pages/profile.html';
+    window.location.href = '/src/pages/home.html';
   }, 2000);
 });
-// claimBtn.addEventListener('click', );

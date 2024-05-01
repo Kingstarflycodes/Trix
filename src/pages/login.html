@@ -1,0 +1,95 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" href="/img/Trix.png" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script
+      src="https://kit.fontawesome.com/edd99ad8ab.js"
+      crossorigin="anonymous"></script>
+    <link href="/src/output.css" rel="stylesheet" />
+    <title>Trix - Login</title>
+  </head>
+  <body>
+    <main
+      class="max-w-screen lg:max-h-screen overflow-x-hidden lg:overflow-y-hidden flex">
+      <div class="lg:w-[50vw] lg:my-auto lg:p-20 w-full p-10">
+        <h1 class="text-center text-2xl font-semibold">
+          Sign in to your account
+        </h1>
+
+        <p class="text-sm text-center mt-4 text-gray-400">
+          Welcome back to Trix
+        </p>
+
+        <div
+          class="flex mt-2 border border-gray-400 bg-white gap-3 py-2 rounded-3xl justify-center w-full">
+          <p>Login with Google</p>
+          <img
+            width="25"
+            height="25"
+            src="/svg/google-icon.svg"
+            alt="google icon" />
+        </div>
+
+        <div class="flex items-center my-4">
+          <div class="w-full bg-gray-400 h-[0.095rem]"></div>
+          <p class="px-3 text-gray-400">or</p>
+          <div class="w-full bg-gray-400 h-[0.095rem]"></div>
+        </div>
+
+        <form class="grid gap-2" action="">
+          <label class="font-semibold" for="email">
+            Email <span class="text-peach">*</span>
+            <input
+              class="w-full mb-5 mt-2 font-normal border border-gray-400 py-2 rounded-3xl pl-4"
+              placeholder="Enter your email"
+              type="email"
+              id="email"
+              reqiured />
+          </label>
+
+          <label class="font-semibold" for="password">
+            Password <span class="text-peach">*</span>
+            <input
+              class="w-full border border-gray-400 mt-2 font-normal py-2 rounded-3xl pl-4"
+              placeholder="Enter your password"
+              type="password"
+              id="password"
+              reqiured />
+          </label>
+
+          <div class="flex items-center my-2">
+            <input
+              class="text-black size-4 mr-2"
+              type="checkbox"
+              id="checkbox" />
+            <label class="cursor-pointer" for="checkbox">
+              I agree to all Terms and privacy policy
+            </label>
+          </div>
+          <button class="w-full text-white py-2 rounded-3xl bg-black">
+            Sign In
+          </button>
+          <p class="pt-3">
+            Don't have an account?
+            <span class="text-sky-500 font-semibold"
+              ><a href="/src/pages/sign-up.html">Create account</a></span
+            >
+          </p>
+        </form>
+      </div>
+      <div
+        class="login lg:w-[50vw] pl-10 pt-14 space-y-6 hidden lg:block text-white bg-peach h-screen">
+        <h1 class="font-semibold leading-[1.5] text-7xl">
+          Shop <br />
+          smart, <br />
+          Get more.
+        </h1>
+        <p class="text-3xl leading-[1.5]">
+          Get more out of every <br />
+          purchase!
+        </p>
+      </div>
+    </main>
+  </body>
+</html>

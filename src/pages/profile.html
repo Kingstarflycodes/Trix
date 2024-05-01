@@ -5,13 +5,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Trix - Profile</title>
     <link rel="stylesheet" href="/src/output.css" />
+    <script defer src="/src/pages/global.js"></script>
   </head>
   <body class="overflow-x-hidden w-screen lg:px-10 lg:pt-6">
     <div
       class="lg:w-[85%] hidden lg:block lg:h-[28vh] absolute top-0 left-1/2 -translate-x-1/2 -z-10 bg-pale"></div>
 
     <header
-      class="header-paddings bg-black text-white lg:rounded-lg flex items-center lg:gap-8 w-full">
+      class="header-paddings bg-black text-white lg:rounded-lg flex items-center justify-between lg:gap-8 w-full">
       <a href="/src/pages/home.html">
         <img src="/svg/trix-logo.svg" width="99" height="30" alt="trix logo" />
       </a>
@@ -46,6 +47,55 @@
             alt="avatar image" />
         </a>
       </div>
+
+            <!-- Mobile nav bar -->
+      <div class="lg:hidden z-10">
+        <button class="openBtn size-10">
+          <img
+            class="togglerOpen"
+            src="/svg/icon-hamburger.svg"
+            alt="icon hamburger" />
+        </button>
+        <button class="closeBtn hidden relative z-30 size-10">
+          <img src="/svg/icon-close.svg" alt="icon close" />
+        </button>
+
+        <div
+          class="menu hidden flex-col z-20 text-center items-center justify-center gap-4 absolute h-screen top-0 left-0 right-0 py-6 bg-black">
+          <ul class="[&_li]:cursor-pointer space-y-6 text-xl">
+            <li class="text-gray-500">
+              <a href="/src/pages/career.html">Careers</a>
+            </li>
+            <li class="text-gray-500">
+              <a href="/src/pages/support.html">Support</a>
+            </li>
+            <li class="text-white">
+              <a href="/src/pages/about.html">About Us</a>
+            </li>
+          </ul>
+
+          <div class="mt-6 flex items-center gap-8">
+            <img
+              class="w-auto"
+              height="60px"
+              src="/svg/trix-chat.svg"
+              alt="trix chat" />
+            <img
+              width="50px"
+              height="50px"
+              src="/svg/whatsapp.svg"
+              alt="whatsapp logo" />
+            <a href="/src/pages/profile.html">
+              <img
+                width="60px"
+                height="60px"
+                src="/img/avatar-image-4.png"
+                alt="avatar image" />
+            </a>
+          </div>
+        </div>
+      </div>
+      <!-- Mobile nav bar -->
     </header>
 
     <div class="w-full lg:hidden h-[10vh] -z-10 bg-pale"></div>
@@ -75,40 +125,40 @@
           class="rotate-[-6deg] p-4 rounded-lg bg-yellow text-white font-semibold">
           You are loved, You are chosen
         </div> -->
+      </div>
 
-        <div class="h-[20vh] mx-auto w-[30vw] flex items-start gap-4">
-          <ul
-            class="h-full activities-date px-5 w-[30%] text-lg items-center overflow-y-scroll space-y-3">
-            <li>April 25</li>
-            <li>1:30 PM</li>
-            <li>2:30 PM</li>
-            <li>1:30 PM</li>
-            <li>April 25</li>
-            <li>1:30 PM</li>
-            <li>2:30 PM</li>
-            <li>1:30 PM</li>
-            <li>April 25</li>
-            <li>1:30 PM</li>
-            <li>2:30 PM</li>
-            <li>1:30 PM</li>
-            <li>April 25</li>
-            <li>1:30 PM</li>
-            <li>2:30 PM</li>
-            <li>1:30 PM</li>
-          </ul>
-          <div class="w-[70%] py-4">
-            <span>
-              <h2 class="text-xl mt-0 font-semibold">Points Earned</h2>
-              <p>
-                1000 TRIX Point earned<br />Keep up the great work, and continue
-                exploring opportunities to earn more rewards!
-              </p>
-              <button
-                class="px-2 py-1 uppercase bg-black rounded-lg text-white">
-                claim
-              </button>
-            </span>
-          </div>
+      <div
+        class="items-center flex-row overflow-hidden h-max mx-auto lg:w-[30vw] flex lg: w-full lg:items-start gap-4">
+        <ul
+          class="max-h-[30vh] h-auto activities-date px-5 lg:min-w-[20%] lg:max-w-[35%] text-lg items-center overflow-y-scroll space-y-3">
+          <li>April 25</li>
+          <li>1:30 PM</li>
+          <li>2:30 PM</li>
+          <li>1:30 PM</li>
+          <li>April 25</li>
+          <li>1:30 PM</li>
+          <li>2:30 PM</li>
+          <li>1:30 PM</li>
+          <li>April 25</li>
+          <li>1:30 PM</li>
+          <li>2:30 PM</li>
+          <li>1:30 PM</li>
+          <li>April 25</li>
+          <li>1:30 PM</li>
+          <li>2:30 PM</li>
+          <li>1:30 PM</li>
+        </ul>
+
+        <div class="w-[60%] flex flex-col lg:items-start items-center gap-4">
+          <h2 class="text-xl font-semibold">Points Earned</h2>
+          <p>
+            1000 TRIX Point earned<br />Keep up the great work, and continue
+            exploring opportunities to earn more rewards!
+          </p>
+          <button
+            class="px-2 ml-auto py-1 uppercase bg-paleGray rounded-lg text-white">
+            claimed
+          </button>
         </div>
       </div>
     </section>

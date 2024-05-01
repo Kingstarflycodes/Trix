@@ -4,7 +4,8 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="/src/output.css" />
-    <script defer src="/src/pages/script.js"></script>
+    <script async src="/src/pages/script.js"></script>
+    <script defer src="/src/pages/global.js"></script>
     <title>Trix - Career</title>
   </head>
   <body
@@ -13,7 +14,7 @@
       class="lg:w-[85%] hidden lg:block lg:h-[30vh] absolute top-0 left-1/2 -translate-x-1/2 -z-10 bg-pale"></div>
 
     <header
-      class="header-paddings bg-black text-white lg:rounded-lg flex items-center lg:gap-8 w-full">
+      class="header-paddings bg-black text-white lg:rounded-lg flex items-center justify-between lg:gap-8 w-full">
       <a href="/src/pages/home.html"
         ><img src="/svg/trix-logo.svg" width="99" height="30" alt="trix logo" />
       </a>
@@ -38,6 +39,55 @@
           <img width="40px" height="40px" src="/img/avatar-image-4.png" alt="avatar image" />
         </a>
       </div>
+
+            <!-- Mobile nav bar -->
+      <div class="lg:hidden z-10">
+        <button class="openBtn size-10">
+          <img
+            class="togglerOpen"
+            src="/svg/icon-hamburger.svg"
+            alt="icon hamburger" />
+        </button>
+        <button class="closeBtn hidden relative z-30 size-10">
+          <img src="/svg/icon-close.svg" alt="icon close" />
+        </button>
+
+        <div
+          class="menu hidden flex-col z-20 text-center items-center justify-center gap-4 absolute h-screen top-0 left-0 right-0 py-6 bg-black">
+          <ul class="[&_li]:cursor-pointer space-y-6 text-xl">
+            <li class="text-white">
+              <a href="/src/pages/career.html">Careers</a>
+            </li>
+            <li class="text-gray-500">
+              <a href="/src/pages/support.html">Support</a>
+            </li>
+            <li class="text-gray-500">
+              <a href="/src/pages/about.html">About Us</a>
+            </li>
+          </ul>
+
+          <div class="mt-6 flex items-center gap-8">
+            <img
+              class="w-auto"
+              height="60px"
+              src="/svg/trix-chat.svg"
+              alt="trix chat" />
+            <img
+              width="50px"
+              height="50px"
+              src="/svg/whatsapp.svg"
+              alt="whatsapp logo" />
+            <a href="/src/pages/profile.html">
+              <img
+                width="60px"
+                height="60px"
+                src="/img/avatar-image-4.png"
+                alt="avatar image" />
+            </a>
+          </div>
+        </div>
+      </div>
+      <!-- Mobile nav bar -->
     </header>
 
     <div class="px-3 bg-darkbg text-white py-4 w-[90%] mx-auto">

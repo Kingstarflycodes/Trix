@@ -9,30 +9,28 @@
   .font-outline-2 {
     -webkit-text-stroke: 2px gray;
   }
-  .font-outline-4 {
-    -webkit-text-stroke: 4px red;
-  }
-}
-
-* {
-  border: 1px solid red;  
 }
 
 body {
-  font-family: "Poppins", sans-serif;
-  /* background-color: #000000ab; */
+  font-family: 'Poppins', sans-serif;
 }
 
-ol li::marker {
-  font-weight: 800;
+.login {
+  background-image: url('/img/login.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: bottom right;
 }
 
-dialog::backdrop {
-  @apply bg-darkbg;
+.create-acct {
+  background-image: url('/img/create-acct.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: bottom right;
 }
 
 .ParentDiv li::marker {
-  font-size: 6em;
+  @apply lg:text-5xl text-3xl;
 }
 
 .time {
@@ -41,7 +39,7 @@ dialog::backdrop {
 }
 
 .paddings {
-  @apply md:px-10 md:py-14 py-4 px-6;
+  @apply md:px-10 md:py-14 py-10 px-6;
 }
 
 .paddings-desktop-y {
@@ -53,129 +51,129 @@ dialog::backdrop {
 }
 
 .sedgwick-ave {
-  font-family: "Sedgwick Ave", cursive;
+  font-family: 'Sedgwick Ave', cursive;
   font-style: normal;
 }
 
 .segoe-ui {
-  font-family: "Segoe UI", sans-serif;
+  font-family: 'Segoe UI', sans-serif;
 }
 
-h1, h2, h3 {
-  font-family: "Poppins", sans-serif;
+h1,
+h2,
+h3 {
+  font-family: 'Poppins', sans-serif;
 }
 
 .familjen-grotesk {
-  font-family: "Familjen Grotesk", sans-serif;
+  font-family: 'Familjen Grotesk', sans-serif;
   font-optical-sizing: auto;
 }
 
-
 .poppins-thin {
-  font-family: "Poppins", sans-serif;
+  font-family: 'Poppins', sans-serif;
   font-weight: 100;
   font-style: normal;
 }
 
 .poppins-extralight {
-  font-family: "Poppins", sans-serif;
+  font-family: 'Poppins', sans-serif;
   font-weight: 200;
   font-style: normal;
 }
 
 .poppins-light {
-  font-family: "Poppins", sans-serif;
+  font-family: 'Poppins', sans-serif;
   font-weight: 300;
   font-style: normal;
 }
 
 .poppins-regular {
-  font-family: "Poppins", sans-serif;
+  font-family: 'Poppins', sans-serif;
   font-weight: 400;
   font-style: normal;
 }
 
 .poppins-medium {
-  font-family: "Poppins", sans-serif;
+  font-family: 'Poppins', sans-serif;
   font-weight: 500;
   font-style: normal;
 }
 
 .poppins-semibold {
-  font-family: "Poppins", sans-serif;
+  font-family: 'Poppins', sans-serif;
   font-weight: 600;
   font-style: normal;
 }
 
 .poppins-bold {
-  font-family: "Poppins", sans-serif;
+  font-family: 'Poppins', sans-serif;
   font-weight: 700;
   font-style: normal;
 }
 
 .poppins-extrabold {
-  font-family: "Poppins", sans-serif;
+  font-family: 'Poppins', sans-serif;
   font-weight: 800;
   font-style: normal;
 }
 
 .poppins-black {
-  font-family: "Poppins", sans-serif;
+  font-family: 'Poppins', sans-serif;
   font-weight: 900;
   font-style: normal;
 }
 
 .poppins-thin-italic {
-  font-family: "Poppins", sans-serif;
+  font-family: 'Poppins', sans-serif;
   font-weight: 100;
   font-style: italic;
 }
 
 .poppins-extralight-italic {
-  font-family: "Poppins", sans-serif;
+  font-family: 'Poppins', sans-serif;
   font-weight: 200;
   font-style: italic;
 }
 
 .poppins-light-italic {
-  font-family: "Poppins", sans-serif;
+  font-family: 'Poppins', sans-serif;
   font-weight: 300;
   font-style: italic;
 }
 
 .poppins-regular-italic {
-  font-family: "Poppins", sans-serif;
+  font-family: 'Poppins', sans-serif;
   font-weight: 400;
   font-style: italic;
 }
 
 .poppins-medium-italic {
-  font-family: "Poppins", sans-serif;
+  font-family: 'Poppins', sans-serif;
   font-weight: 500;
   font-style: italic;
 }
 
 .poppins-semibold-italic {
-  font-family: "Poppins", sans-serif;
+  font-family: 'Poppins', sans-serif;
   font-weight: 600;
   font-style: italic;
 }
 
 .poppins-bold-italic {
-  font-family: "Poppins", sans-serif;
+  font-family: 'Poppins', sans-serif;
   font-weight: 700;
   font-style: italic;
 }
 
 .poppins-extrabold-italic {
-  font-family: "Poppins", sans-serif;
+  font-family: 'Poppins', sans-serif;
   font-weight: 800;
   font-style: italic;
 }
 
 .poppins-black-italic {
-  font-family: "Poppins", sans-serif;
+  font-family: 'Poppins', sans-serif;
   font-weight: 900;
   font-style: italic;
 }
-

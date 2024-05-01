@@ -9,6 +9,7 @@ module.exports = {
         yellow: '#F1D80C',
         peach: '#F66364',
         pale: '#F6F8F3',
+        paleGray: '#DADADA',
         darkbg: '#000000b0',
       }
     },

@@ -15,7 +15,6 @@ let x = setInterval(() => {
 
   let days = Math.floor(duration / (1000 * 60 * 60 * 24));
   let hours = Math.floor((duration % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-
   let minutes = Math.floor((duration % (1000 * 60 * 60)) / (1000 * 60));
   let seconds = Math.floor((duration % (1000 * 60)) / 1000);
 
