@@ -1012,10 +1012,6 @@ video {
   max-height: 30vh;
 }
 
-.max-h-screen{
-  max-height: 100vh;
-}
-
 .min-h-screen{
   min-height: 100vh;
 }
@@ -3035,20 +3031,8 @@ video {
 
 /* npx tailwindcss -i ./src/input.css -o ./src/output.css --watch */
 
-/* * {
-  border: 1px solid red;  
-} */
-
 body {
   font-family: 'Poppins', sans-serif;
-}
-
-/* ol li::marker {
-  font-weight: 800;
-} */
-
-input[type='checkbox']:checked {
-  background-color: red;
 }
 
 .login {
@@ -3058,6 +3042,25 @@ input[type='checkbox']:checked {
   background-position: bottom right;
 }
 
+.activities{
+  position: relative;
+}
+
+.activities::before {
+  content: '';
+  position: absolute;
+  bottom: -0.75rem;
+  left: 50%;
+  z-index: -10;
+  width: 1.5rem;
+  height: 1.5rem;
+  --tw-translate-x: -50%;
+  --tw-rotate: 45deg;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+  --tw-bg-opacity: 1;
+  background-color: rgb(0 0 0 / var(--tw-bg-opacity));
+}
+
 .create-acct {
   background-image: url('/img/create-acct.png');
   background-repeat: no-repeat;
@@ -3065,8 +3068,8 @@ input[type='checkbox']:checked {
   background-position: bottom right;
 }
 
-.menu::backdrop{
-  background-color: #000000b0;
+dialog::backdrop {
+  background: rgba(0, 0, 0, 0.71);
 }
 
 .ParentDiv li::marker{
@@ -3588,10 +3591,6 @@ h3 {
     --tw-space-y-reverse: 0;
     margin-top: calc(0px * calc(1 - var(--tw-space-y-reverse)));
     margin-bottom: calc(0px * var(--tw-space-y-reverse));
-  }
-
-  .lg\:overflow-hidden{
-    overflow: hidden;
   }
 
   .lg\:overflow-y-hidden{

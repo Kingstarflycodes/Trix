@@ -22,11 +22,24 @@ body {
   background-position: bottom right;
 }
 
+.activities {
+  @apply relative;
+}
+
+.activities::before {
+  content: '';
+  @apply absolute -bottom-3 left-1/2 -translate-x-1/2 size-6 bg-black -z-10 rotate-[45deg];
+}
+
 .create-acct {
   background-image: url('/img/create-acct.png');
   background-repeat: no-repeat;
   background-size: cover;
   background-position: bottom right;
+}
+
+dialog::backdrop {
+  background: rgba(0, 0, 0, 0.71);
 }
 
 .ParentDiv li::marker {
