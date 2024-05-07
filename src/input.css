@@ -11,8 +11,48 @@
   }
 }
 
+/* * {
+  border: 1px solid red;
+} */
+
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   font-family: 'Poppins', sans-serif;
+}
+
+.dropbtn1::after {
+  content: '';
+  @apply hidden bg-red-500 absolute lg:left-[12vw] xl:left-[10vw] bottom-0 h-[7vh] lg:w-[32vw] xl:w-[28vw];
+}
+.dropbtn2::after {
+  content: '';
+  @apply hidden bg-red-500 absolute lg:left-[12vw] xl:left-[10vw] bottom-0 h-[7vh] lg:w-[32vw] xl:w-[28vw];
+}
+.dropbtn3::after {
+  content: '';
+  @apply hidden bg-red-500 absolute lg:left-[12vw] xl:left-[10vw] bottom-0 h-[7vh] lg:w-[32vw] xl:w-[28vw];
+}
+
+header:hover .dropbtn1:hover {
+  &::after,
+  .dropdown-content1 {
+    display: block;
+  }
+}
+header:hover .dropbtn2:hover {
+  &::after,
+  .dropdown-content2 {
+    display: block;
+  }
+}
+header:hover .dropbtn3:hover {
+  &::after,
+  .dropdown-content3 {
+    display: block;
+  }
 }
 
 .login {

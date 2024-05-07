@@ -94,69 +94,76 @@
       <h1 class="text-3xl font-semibold text-center uppercase mb-4">
         claim your trix id
       </h1>
-      <article
-        class="flex justify-center overflow-x-scroll paddings bg-pale gap-6 items-end [&_img]:border-white [&_img]:border-8 [&_img]:rounded-full">
+
+      <div class="size-[220px] my-8 rounded-full mx-auto selected-avatar flex items-center justify-center bg-white gap-4 border-pale border-8">
+        <p class="text-center font-medium text-xl text-black uppercase">Select Avatar</p>
+      </div>
+      <div
+        class="avatar-container flex items-center justify-center flew-wrap  paddings bg-pale gap-4 [&_img]:border-white [&_img]:cursor-pointer [&_img]:border-8 [&_img]:rounded-full [&_img]:size-[160.67px]">
         <div>
           <img
-            width="138.67px"
-            height="138.67px"
+            class="avatar"
             src="/img/avatar-image-1.png"
-            alt="avatar image" />
+            alt="avatar image 1"
+            data-avatar-id="1" />
           <h2 class="text-lg font-semibold text-center mt-4">ShadowBlade87</h2>
         </div>
         <div>
           <img
-            width="138.67px"
-            height="138.67px"
+            class="avatar"
             src="/img/avatar-image-2.png"
-            alt="avatar image" />
+            alt="avatar image 2"
+            data-avatar-id="2" />
           <h2 class="text-lg font-semibold text-center mt-4">
             PhoenixRising23
           </h2>
         </div>
         <div>
           <img
-            width="138.67px"
-            height="138.67px"
+            class="avatar"
             src="/img/avatar-image-3.png"
-            alt="avatar image" />
+            alt="avatar image 3"
+            data-avatar-id="3" />
           <h2 class="text-lg font-semibold text-center mt-4">
             ThunderStrike99
           </h2>
         </div>
-        <img
-          width="198.3px"
-          height="198.3px"
-          src="/img/avatar-image-4.png"
-          alt="avatar image" />
         <div>
           <img
-            width="138.67px"
-            height="138.67px"
+            class="avatar"
+            src="/img/avatar-image-4.png"
+            alt="avatar image 4"
+            data-avatar-id="4" />
+          <h2 class="text-lg font-semibold text-center mt-4">FireRoad04</h2>
+        </div>
+        <div>
+          <img
+            class="avatar"
             src="/img/avatar-image-5.png"
-            alt="avatar image" />
+            alt="avatar image 5"
+            data-avatar-id="5" />
           <h2 class="text-lg font-semibold text-center mt-4">MysticGamerx</h2>
         </div>
         <div>
           <img
-            width="138.67px"
-            height="138.67px"
+            class="avatar"
             src="/img/avatar-image-6.png"
-            alt="avatar image" />
+            alt="avatar image 6"
+            data-avatar-id="6" />
           <h2 class="text-lg font-semibold text-center mt-4">BlazeRunner64</h2>
         </div>
         <div>
           <img
-            width="138.67px"
-            height="138.67px"
+            class="avatar"
             src="/img/avatar-image-7.png"
-            alt="avatar image" />
+            alt="avatar image 7"
+            data-avatar-id="7" />
           <h2 class="text-lg font-semibold text-center mt-4">FrostByte88</h2>
         </div>
-      </article>
+      </div>
 
       <form
-        class="form lg:w-[25vw] w-[90%] rounded-lg p-4 mt-8 bg-white mx-auto flex items-center flex-col gap-4 [&_input]:rounded-md [&_input]:bg-white [&_input]:p-2">
+        class="form lg:w-[26vw] w-[90%] rounded-lg p-4 mt-8 bg-white mx-auto flex items-center flex-col gap-4 [&_input]:rounded-md [&_input]:bg-white [&_input]:p-2">
         <div
           class="flex items-center w-full rounded-lg p-2 border border-black">
           <span
@@ -212,7 +219,104 @@
         </button>
       </dialog>
     </main>
+    <!-- <div class="avatar-selection">
+      <div class="selected-avatar">
+        <p>Select Avatar</p>
+      </div>
+      <div class="avatar-container">
+        <img
+          src="https://avataaars.io/?avatarStyle=Circle&topType=LongHairStraight&accessoriesType=Blank&hairColor=BrownDark&facialHairType=Blank&clotheType=BlazerShirt&eyeType=Default&eyebrowType=Default&mouthType=Default&skinColor=Light"
+          alt="Avatar 1"
+          data-avatar-id="1"
+          class="avatar" />
+        <img
+          src="https://avataaars.io/?avatarStyle=Circle&topType=Hijab&accessoriesType=Wayfarers&hatColor=Blue03&hairColor=Black&facialHairType=MoustacheFancy&clotheType=Overall&clotheColor=Gray01&eyeType=Default&eyebrowType=UpDown&mouthType=Twinkle&skinColor=Pale"
+          alt="Avatar 2"
+          data-avatar-id="2"
+          class="avatar" />
+        <img
+          src="https://avataaars.io/?avatarStyle=Circle&topType=Turban&accessoriesType=Prescription01&hatColor=Red&hairColor=Brown&facialHairType=BeardLight&facialHairColor=Black&clotheType=GraphicShirt&clotheColor=PastelOrange&graphicType=Skull&eyeType=Dizzy&eyebrowType=UpDownNatural&mouthType=Vomit&skinColor=Brown"
+          alt="Avatar 3"
+          data-avatar-id="3"
+          class="avatar" />
+        <img
+          src="https://avataaars.io/?avatarStyle=Circle&topType=Eyepatch&accessoriesType=Prescription01&hairColor=PastelPink&facialHairType=BeardLight&facialHairColor=Black&clotheType=CollarSweater&clotheColor=PastelGreen&eyeType=WinkWacky&eyebrowType=AngryNatural&mouthType=ScreamOpen&skinColor=DarkBrown"
+          alt="Avatar 4"
+          data-avatar-id="4"
+          class="avatar" />
+        <img
+          src="https://avataaars.io/?avatarStyle=Circle&topType=LongHairStraight2&accessoriesType=Prescription02&hairColor=Blonde&facialHairType=BeardLight&facialHairColor=Blonde&clotheType=BlazerSweater&clotheColor=PastelYellow&eyeType=EyeRoll&eyebrowType=SadConcerned&mouthType=Smile&skinColor=Pale"
+          data-avatar-id="5"
+          class="avatar" />
+        <img
+          src="https://avataaars.io/?avatarStyle=Circle&topType=LongHairStraight&accessoriesType=Round&hairColor=SilverGray&facialHairType=MoustacheFancy&facialHairColor=BlondeGolden&clotheType=CollarSweater&clotheColor=PastelBlue&eyeType=Dizzy&eyebrowType=SadConcernedNatural&mouthType=Smile&skinColor=Light"
+          alt="Avatar 6"
+          data-avatar-id="6"
+          class="avatar" />
+      </div>
+    </div> -->
 
     <div class="w-[85%] h-[10vh] mx-auto bg-pale"></div>
   </body>
+  <!-- <style>
+    .avatar-selection {
+      display: flex;
+      align-items: center;
+    }
+
+    .selected-avatar {
+      width: auto;
+      height: auto;
+      aspect-ratio: 1/1;
+      border-radius: 50%;
+      background-color: #ddd;
+      text-align: center;
+      line-height: 100px;
+      font-weight: bold;
+    }
+
+    .avatar-container {
+      margin-left: auto;
+      display: flex;
+      overflow-x: scroll;
+      scroll-behavior: smooth;
+      white-space: nowrap;
+    }
+
+    .avatar {
+      width: 50px;
+      height: 50px;
+      margin: 0 10px;
+      border-radius: 50%;
+      cursor: pointer;
+    }
+
+    .avatar.selected {
+      width: 100px;
+      height: 100px;
+    }
+  </style> -->
+  <script>
+    const avatarContainer = document.querySelector('.avatar-container');
+    const selectedAvatar = document.querySelector('.selected-avatar');
+
+    avatarContainer.addEventListener('click', (event) => {
+      if (event.target.classList.contains('avatar')) {
+        const selectedAvatarId = event.target.dataset.avatarId;
+        const selectedAvatarImg = event.target;
+
+        // Remove selected class from previously selected avatar
+        const previouslySelected = avatarContainer.querySelector('.selected');
+        if (previouslySelected) {
+          previouslySelected.classList.remove('selected');
+        }
+
+        // Add selected class to clicked avatar
+        selectedAvatarImg.classList.add('selected');
+
+        // Update the selected avatar image in the "selected-avatar" element
+        selectedAvatar.innerHTML = `<img src="${selectedAvatarImg.src}" alt="Selected Avatar">`;
+      }
+    });
+  </script>
 </html>

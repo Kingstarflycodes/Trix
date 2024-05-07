@@ -73,7 +73,8 @@
         <small class="text-lg"
           >Where Every Click Unleashes a New Level of Thrill !</small
         >
-        <div class="flex justify-center lg:justify-start items-center gap-6">
+        <div
+          class="flex justify-center mb-8 lg:justify-start items-center gap-6">
           <div>
             <p class="text-2xl font-bold block">3k+</p>
             <p class="text-gray-400">Active Users</p>
@@ -83,14 +84,18 @@
             <p class="text-gray-400">Downloaded</p>
           </div>
         </div>
-        <a href="/src/pages/sign-up.html">
-          <button class="px-8 py-3 rounded-lg text-white bg-purple mr-4">
-            Get Started
-          </button>
-        </a>
-        <button class="px-8 font-semibold rounded-lg py-3 bg-[#ffffffc0]">
-          How it works
-        </button>
+        <div>
+          <a href="/src/pages/sign-up.html">
+            <button class="px-8 py-3 rounded-lg text-white bg-purple mr-4">
+              Get Started
+            </button>
+          </a>
+          <a href="#how-it-works">
+            <button class="px-8 font-semibold rounded-lg py-3 bg-[#ffffffc0]">
+              How it works
+            </button>
+          </a>
+        </div>
       </div>
       <div>
         <img
@@ -123,21 +128,21 @@
           class="hidden lg:inline" />touch of magic.
       </p>
       <div
-        class="rounded-lg lg:p-6 p-4 lg:pr-[15%] lg:w-[80%] mx-auto mb-32 bg-[#000000ab] flex flex-col text-center lg:text-left lg:flex-row lg:items-center lg:justify-between lg:gap-0 gap-6">
+        class="rounded-lg lg:py-6 lg:pr-[15%] lg:pl-10 p-4 lg:w-[80%] mx-auto mb-32 bg-[#000000ab] flex flex-col text-center lg:text-left lg:flex-row lg:items-center lg:justify-between lg:gap-0 gap-6">
         <p>
           Ready to embark on the ultimate gaming adventure? Join
           <br class="hidden lg:inline" />Trix today, where every click opens a
           door to gaming<br class="hidden lg:inline" />bliss. Let the games
           begin! &#128640;&#127918;
         </p>
-        <a href="/src/pages/route.html">
+        <a href="/src/pages/sign-up.html">
           <button
-            class="px-8 py-3 w-full lg:w-auto rounded-lg text-white bg-purple">
+            class="px-8 py-3 order-2 w-full lg:w-auto rounded-lg text-white bg-purple">
             Get Started
           </button>
         </a>
         <img
-          class="absolute lg:right-20 right-8 bottom-0 w-[40%] h-auto lg:w-[30%]"
+          class="absolute lg:right-12 order-6 right-8 bottom-0 h-auto w-[20%] lg:w-[18%]"
           src="./img/game_img2.png" />
       </div>
     </section>
@@ -217,7 +222,7 @@
       </ul>
     </section>
 
-    <section class="paddings relative space-y-8">
+    <section class="paddings relative space-y-8" id="how-it-works">
       <h2 class="lg:text-3xl text-2xl font-semibold text-center">
         How it works
       </h2>
@@ -288,7 +293,7 @@
       </div>
     </section>
 
-    <section class="paddings relative space-y-8 text-center">
+    <section class="paddings relative space-y-8 text-center" id="faq">
       <div class="z-10 space-y-6 mb-8">
         <h2 class="lg:text-3xl text-2xl font-bold leading-[1.3]">
           Frequently Asked <br />
@@ -332,9 +337,12 @@
         <h2 class="font-semibold text-2xl">Explore Trix</h2>
         <div class="lg:text-2xl text-lg">
           <p class="leading-[2.2] mb-8">
-            Home | About Us | FAQ |
+            <a href="/src/pages/home.html">Home</a> |
+            <a href="/src/pages/about.html">About Us</a> |
+            <a href="#faq">FAQ</a> |
             <br />
-            Privacy policy | Terms of Service |
+            <a href="/src/pages/policy.html">Privacy policy</a> |
+            <a href="/src/pages/terms.html">Terms of Service</a> |
             <br />
             Contact us | Customer Support |
             <br />

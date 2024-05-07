@@ -6,6 +6,7 @@
     <link rel="icon" href="/img/Trix.png" />
     <link rel="stylesheet" href="/src/output.css" />
     <script defer src="/src/pages/global.js"></script>
+    <!-- <script async src="/src/pages/nav.js"></script>  -->
     <title>Trix - About</title>
   </head>
   <body class="overflow-x-hidden max-w-screen lg:px-10 lg:pt-6">
@@ -13,21 +14,41 @@
       class="lg:w-[85%] hidden lg:block lg:h-[28vh] absolute top-0 left-1/2 -translate-x-1/2 -z-10 bg-pale"></div>
 
     <header
-      class="header-paddings bg-black text-white lg:rounded-lg flex items-center justify-between lg:gap-8 w-full">
+      class="header-paddings relative bg-black text-white lg:rounded-lg flex items-center justify-between lg:gap-8 w-full">
       <a href="/src/pages/home.html">
         <img src="/svg/trix-logo.svg" width="99" height="30" alt="trix logo" />
       </a>
 
       <nav class="hidden lg:flex items-center justify-between">
         <ul class="flex items-center gap-6 [&_li]:cursor-pointer">
-          <li class="text-gray-500">
+          <li class="text-gray-500 dropbtn1">
             <a href="/src/pages/career.html">Careers</a>
+            <div
+              class="px-3 dropdown-content1 absolute -bottom-[54%] hidden left-0 right-0 bg-darkbg text-white py-4 w-[91%] mx-auto">
+              <ul class="font-medium flex items-center gap-6">
+                <li>Why You Might Love It Here</li>
+                <li>Joining Trix</li>
+                <li>Open Positions</li>
+              </ul>
+            </div>
           </li>
-          <li class="text-gray-500">
+          <li class="text-gray-500 dropbtn2">
             <a href="/src/pages/support.html">Support</a>
+            <div
+              class="px-3 dropdown-content2 absolute -bottom-[54%] hidden left-0 right-0 bg-darkbg text-white py-4 w-[91%] mx-auto">
+              <ul class="font-medium flex items-center gap-6">
+                <li>Be Safe & Play Fair</li>
+              </ul>
+            </div>
           </li>
-          <li class="text-white">
+          <li class="text-white dropbtn3">
             <a href="/src/pages/about.html">About Us</a>
+            <div
+              class="px-3 dropdown-content3 absolute -bottom-[54%] hidden left-0 right-0 bg-darkbg text-white py-4 w-[91%] mx-auto">
+              <ul class="font-medium flex items-center gap-6">
+                <li>Events</li>
+              </ul>
+            </div>
           </li>
         </ul>
       </nav>
@@ -66,12 +87,32 @@
           <ul class="[&_li]:cursor-pointer space-y-6 text-xl">
             <li class="text-gray-500">
               <a href="/src/pages/career.html">Careers</a>
+              <div
+                class="px-3 dropdown-content1 absolute -bottom-[54%] hidden left-0 right-0 bg-darkbg text-white py-4 w-[91%] mx-auto">
+                <ul class="font-medium flex items-center gap-6">
+                  <li>Why You Might Love It Here</li>
+                  <li>Joining Trix</li>
+                  <li>Open Positions</li>
+                </ul>
+              </div>
             </li>
             <li class="text-gray-500">
               <a href="/src/pages/support.html">Support</a>
+              <div
+                class="px-3 dropdown-content2 absolute -bottom-[54%] hidden left-0 right-0 bg-darkbg text-white py-4 w-[91%] mx-auto">
+                <ul class="font-medium flex items-center gap-6">
+                  <li>Be Safe & Play Fair</li>
+                </ul>
+              </div>
             </li>
             <li class="text-white">
-              <a href="/src/pages/about.html">About Us</a>
+              <a href="/src/pages/about.html">About me</a>
+              <div
+                class="px-3 dropdown-content3 absolute -bottom-[54%] hidden left-0 right-0 bg-darkbg text-white py-4 w-[91%] mx-auto">
+                <ul class="font-medium flex items-center gap-6">
+                  <li>Events</li>
+                </ul>
+              </div>
             </li>
           </ul>
 
@@ -98,14 +139,6 @@
       </div>
       <!-- Mobile nav bar -->
     </header>
-
-    <div class="px-3 bg-darkbg text-white py-4 w-[90%] mx-auto">
-      <ul class="font-medium flex items-center gap-6">
-        <li>Why You Might Love It Here</li>
-        <li>Joining Trix</li>
-        <li>Open Positions</li>
-      </ul>
-    </div>
 
     <div class="w-full lg:hidden h-[10vh] -z-10 bg-pale"></div>
 
