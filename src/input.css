@@ -25,15 +25,15 @@ body {
 
 .dropbtn1::after {
   content: '';
-  @apply hidden bg-red-500 absolute lg:left-[12vw] xl:left-[10vw] bottom-0 h-[7vh] lg:w-[32vw] xl:w-[28vw];
+  @apply hidden bg-transparent absolute lg:left-[12vw] xl:left-[10vw] bottom-0 h-[7vh] lg:w-[32vw] xl:w-[28vw];
 }
 .dropbtn2::after {
   content: '';
-  @apply hidden bg-red-500 absolute lg:left-[12vw] xl:left-[10vw] bottom-0 h-[7vh] lg:w-[32vw] xl:w-[28vw];
+  @apply hidden bg-transparent absolute lg:left-[12vw] xl:left-[10vw] bottom-0 h-[7vh] lg:w-[32vw] xl:w-[28vw];
 }
 .dropbtn3::after {
   content: '';
-  @apply hidden bg-red-500 absolute lg:left-[12vw] xl:left-[10vw] bottom-0 h-[7vh] lg:w-[32vw] xl:w-[28vw];
+  @apply hidden bg-transparent absolute lg:left-[12vw] xl:left-[10vw] bottom-0 h-[7vh] lg:w-[32vw] xl:w-[28vw];
 }
 
 header:hover .dropbtn1:hover {

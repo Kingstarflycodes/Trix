@@ -1,265 +1,267 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="icon" href="/img/Trix.png" />
-    <link rel="stylesheet" href="/src/output.css" />
-    <script defer src="/src/pages/global.js"></script>
-    <!-- <script async src="/src/pages/nav.js"></script>  -->
-    <title>Trix - About</title>
-  </head>
-  <body class="overflow-x-hidden max-w-screen lg:px-10 lg:pt-6">
-    <div
-      class="lg:w-[85%] hidden lg:block lg:h-[28vh] absolute top-0 left-1/2 -translate-x-1/2 -z-10 bg-pale"></div>
 
-    <header
-      class="header-paddings relative bg-black text-white lg:rounded-lg flex items-center justify-between lg:gap-8 w-full">
-      <a href="/src/pages/home.html">
-        <img src="/svg/trix-logo.svg" width="99" height="30" alt="trix logo" />
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="icon" href="/img/Trix.png" />
+  <link rel="stylesheet" href="/src/output.css" />
+  <script defer src="/src/pages/global.js"></script>
+  <script src="https://kit.fontawesome.com/edd99ad8ab.js" crossorigin="anonymous"></script>
+
+  <!-- Flowbite -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.css" rel="stylesheet" />
+  <script defer src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.js"></script>
+  <!-- Flowbite -->
+  
+  <!-- <script async src="/src/pages/nav.js"></script>  -->
+  <title>Trix - About</title>
+</head>
+
+<body class="overflow-x-hidden max-w-screen lg:px-10 lg:pt-6">
+  <div class="lg:w-[85%] hidden lg:block lg:h-[28vh] absolute top-0 left-1/2 -translate-x-1/2 -z-10 bg-pale"></div>
+
+  <header
+    class="header-paddings relative bg-black text-white lg:rounded-lg flex items-center justify-between lg:gap-8 w-full">
+    <a href="/src/pages/home.html">
+      <img src="/svg/trix-logo.svg" width="99" height="30" alt="trix logo" />
+    </a>
+
+    <nav class="hidden lg:flex items-center justify-between">
+      <ul class="flex items-center gap-6 [&_li]:cursor-pointer">
+        <li class="text-gray-500 dropbtn1">
+          <a href="/src/pages/career.html">Careers</a>
+          <div
+            class="px-3 dropdown-content1 absolute -bottom-[54%] hidden left-0 right-0 bg-darkbg text-white py-4 w-[91%] mx-auto">
+            <ul class="font-medium flex items-center gap-6">
+              <li>Why You Might Love It Here</li>
+              <li>Joining Trix</li>
+              <li>Open Positions</li>
+            </ul>
+          </div>
+        </li>
+        <li class="text-gray-500 dropbtn2">
+          <a href="/src/pages/support.html">Support</a>
+          <div
+            class="px-3 dropdown-content2 absolute -bottom-[54%] hidden left-0 right-0 bg-darkbg text-white py-4 w-[91%] mx-auto">
+            <ul class="font-medium flex items-center gap-6">
+              <li>Be Safe & Play Fair</li>
+            </ul>
+          </div>
+        </li>
+        <li class="text-white dropbtn3">
+          <a href="/src/pages/about.html">About Us</a>
+          <div
+            class="px-3 dropdown-content3 absolute -bottom-[54%] hidden left-0 right-0 bg-darkbg text-white py-4 w-[91%] mx-auto">
+            <ul class="font-medium flex items-center gap-6">
+              <li>Events</li>
+            </ul>
+          </div>
+        </li>
+      </ul>
+    </nav>
+
+    <div class="ml-auto hidden lg:flex items-center gap-4 [&_img]:cursor-pointer">
+      <img src="/svg/trix-chat.svg" alt="trix chat" />
+      <img width="40px" height="40px" src="/svg/whatsapp.svg" alt="whatsapp logo" />
+      <a href="/src/pages/profile.html">
+        <img width="40px" height="40px" src="/img/avatar-image-4.png" alt="avatar image" />
       </a>
+    </div>
 
-      <nav class="hidden lg:flex items-center justify-between">
-        <ul class="flex items-center gap-6 [&_li]:cursor-pointer">
-          <li class="text-gray-500 dropbtn1">
-            <a href="/src/pages/career.html">Careers</a>
-            <div
-              class="px-3 dropdown-content1 absolute -bottom-[54%] hidden left-0 right-0 bg-darkbg text-white py-4 w-[91%] mx-auto">
-              <ul class="font-medium flex items-center gap-6">
+    <!-- Mobile nav bar -->
+    <div class="lg:hidden z-10">
+      <button class="openBtn size-10">
+        <img class="togglerOpen" src="/svg/icon-hamburger.svg" alt="icon hamburger" />
+      </button>
+      <button class="closeBtn hidden relative z-30 size-10">
+        <img src="/svg/icon-close.svg" alt="icon close" />
+      </button>
+
+      <div
+        class="menu hidden flex-col z-20 text-center items-center justify-center gap-4 absolute h-screen top-0 left-0 right-0 py-10 pt-20 bg-black">
+        <ul class="[&_li]:cursor-pointer hover:[&_li_a]:underline w-full space-y-6 text-xl" id="accordion-collapse"
+          data-accordion="collapse" data-active-classes="text-sky-600">
+          <li class="text-gray-500" id="accordion-collapse-heading-1">
+            <span
+              class="flex items-center justify-between w-[80%] p-5 font-medium mx-auto rtl:text-right text-gray-500 gap-3"
+              data-accordion-target="#accordion-collapse-body-1" aria-expanded="false"
+              aria-controls="accordion-collapse-body-1">
+              <a href="/src/pages/career.html">Careers</a>
+              <svg data-accordion-icon class="w-3 h-3 rotate-180 shrink-0" aria-hidden="true"
+                xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
+                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                  d="M9 5 5 1 1 5" />
+              </svg>
+            </span>
+            <div class="hidden my-4 bg-gray-600 rounded-lg text-white p-6 w-[80%] mx-auto"
+              id="accordion-collapse-body-1" aria-labelledby="accordion-collapse-heading-1">
+              <ul class="font-medium text-center space-y-3">
                 <li>Why You Might Love It Here</li>
                 <li>Joining Trix</li>
                 <li>Open Positions</li>
               </ul>
             </div>
           </li>
-          <li class="text-gray-500 dropbtn2">
-            <a href="/src/pages/support.html">Support</a>
-            <div
-              class="px-3 dropdown-content2 absolute -bottom-[54%] hidden left-0 right-0 bg-darkbg text-white py-4 w-[91%] mx-auto">
-              <ul class="font-medium flex items-center gap-6">
+
+          <li class="text-gray-500" id="accordion-collapse-heading-2">
+            <span
+              class="flex items-center justify-between w-[80%] p-5 font-medium mx-auto rtl:text-right text-gray-500 gap-3"
+              data-accordion-target="#accordion-collapse-body-2" aria-expanded="false"
+              aria-controls="accordion-collapse-body-2">
+              <a href="/src/pages/support.html">Support</a>
+              <svg data-accordion-icon class="w-3 h-3 rotate-180 shrink-0" aria-hidden="true"
+                xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
+                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                  d="M9 5 5 1 1 5" />
+              </svg>
+            </span>
+            <div class="hidden my-4 bg-gray-600 rounded-lg text-white p-6 w-[80%] mx-auto"
+              id="accordion-collapse-body-2" aria-labelledby="accordion-collapse-heading-2">
+              <ul class="font-medium text-center space-y-3">
                 <li>Be Safe & Play Fair</li>
               </ul>
             </div>
           </li>
-          <li class="text-white dropbtn3">
-            <a href="/src/pages/about.html">About Us</a>
-            <div
-              class="px-3 dropdown-content3 absolute -bottom-[54%] hidden left-0 right-0 bg-darkbg text-white py-4 w-[91%] mx-auto">
-              <ul class="font-medium flex items-center gap-6">
+          <li>
+            <span
+              class="flex items-center justify-between text-white w-[80%] p-5 font-medium mx-auto rtl:text-rightgap-3"
+              data-accordion-target="#accordion-collapse-body-3" aria-expanded="false"
+              aria-controls="accordion-collapse-body-2">
+              <a href="/src/pages/about.html">About Us</a>
+              <svg data-accordion-icon class="w-3 h-3 rotate-180 shrink-0" aria-hidden="true"
+                xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
+                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                  d="M9 5 5 1 1 5" />
+              </svg>
+            </span>
+            <div class="hidden my-4 bg-gray-600 rounded-lg text-white p-6 w-[80%] mx-auto"
+              id="accordion-collapse-body-3" aria-labelledby="accordion-collapse-heading-3">
+              <ul class="font-medium text-center space-y-3">
                 <li>Events</li>
               </ul>
             </div>
           </li>
         </ul>
-      </nav>
 
-      <div
-        class="ml-auto hidden lg:flex items-center gap-4 [&_img]:cursor-pointer">
-        <img src="/svg/trix-chat.svg" alt="trix chat" />
-        <img
-          width="40px"
-          height="40px"
-          src="/svg/whatsapp.svg"
-          alt="whatsapp logo" />
-        <a href="/src/pages/profile.html">
-          <img
-            width="40px"
-            height="40px"
-            src="/img/avatar-image-4.png"
-            alt="avatar image" />
-        </a>
-      </div>
-
-      <!-- Mobile nav bar -->
-      <div class="lg:hidden z-10">
-        <button class="openBtn size-10">
-          <img
-            class="togglerOpen"
-            src="/svg/icon-hamburger.svg"
-            alt="icon hamburger" />
-        </button>
-        <button class="closeBtn hidden relative z-30 size-10">
-          <img src="/svg/icon-close.svg" alt="icon close" />
-        </button>
-
-        <div
-          class="menu hidden flex-col z-20 text-center items-center justify-center gap-4 absolute h-screen top-0 left-0 right-0 py-6 bg-black">
-          <ul class="[&_li]:cursor-pointer space-y-6 text-xl">
-            <li class="text-gray-500">
-              <a href="/src/pages/career.html">Careers</a>
-              <div
-                class="px-3 dropdown-content1 absolute -bottom-[54%] hidden left-0 right-0 bg-darkbg text-white py-4 w-[91%] mx-auto">
-                <ul class="font-medium flex items-center gap-6">
-                  <li>Why You Might Love It Here</li>
-                  <li>Joining Trix</li>
-                  <li>Open Positions</li>
-                </ul>
-              </div>
-            </li>
-            <li class="text-gray-500">
-              <a href="/src/pages/support.html">Support</a>
-              <div
-                class="px-3 dropdown-content2 absolute -bottom-[54%] hidden left-0 right-0 bg-darkbg text-white py-4 w-[91%] mx-auto">
-                <ul class="font-medium flex items-center gap-6">
-                  <li>Be Safe & Play Fair</li>
-                </ul>
-              </div>
-            </li>
-            <li class="text-white">
-              <a href="/src/pages/about.html">About me</a>
-              <div
-                class="px-3 dropdown-content3 absolute -bottom-[54%] hidden left-0 right-0 bg-darkbg text-white py-4 w-[91%] mx-auto">
-                <ul class="font-medium flex items-center gap-6">
-                  <li>Events</li>
-                </ul>
-              </div>
-            </li>
-          </ul>
-
-          <div class="mt-6 flex items-center gap-8">
-            <img
-              class="w-auto"
-              height="60px"
-              src="/svg/trix-chat.svg"
-              alt="trix chat" />
-            <img
-              width="50px"
-              height="50px"
-              src="/svg/whatsapp.svg"
-              alt="whatsapp logo" />
-            <a href="/src/pages/profile.html">
-              <img
-                width="60px"
-                height="60px"
-                src="/img/avatar-image-4.png"
-                alt="avatar image" />
-            </a>
-          </div>
+        <div class="mt-6 flex items-center gap-8">
+          <img class="w-auto" height="60px" src="/svg/trix-chat.svg" alt="trix chat" />
+          <img width="50px" height="50px" src="/svg/whatsapp.svg" alt="whatsapp logo" />
+          <a href="/src/pages/profile.html">
+            <img width="60px" height="60px" src="/img/avatar-image-4.png" alt="avatar image" />
+          </a>
         </div>
       </div>
-      <!-- Mobile nav bar -->
-    </header>
+    </div>
+    <!-- Mobile nav bar -->
+  </header>
 
-    <div class="w-full lg:hidden h-[10vh] -z-10 bg-pale"></div>
+  <!-- <div class="w-full lg:hidden h-[10vh] -z-10 bg-pale"></div> -->
 
-    <section class="my-14 mt-20 lg:px-0 px-8">
-      <h2 class="text-center mb-8 text-2xl font-semibold">
-        THE BEST TEAMS GIVE THE <br />
-        BEST REWARD
-      </h2>
-      <h3 class="text-center mb-4 text-lg font-semibold capitalize">Trix</h3>
-      <p class="text-center mb-8 xl:w-[40%] lg:w-[60%] mx-auto">
-        Trix is an innovative platform that turns your everyday purchases into
-        exciting rewards for gamers and users alike. We believe in adding value
-        to every transaction you make, whether it's buying Airtime or Internet
-        data, paying bills, or shopping online
-      </p>
-      <h2 class="text-center mb-8 text-2xl font-semibold">Why We Are Here</h2>
-      <p class="text-center mb-8 xl:w-[40%] lg:w-[60%] mx-auto">
-        At Trix, we're driven by a simple yet powerful mission: to revolutionize
-        the way you shop and reward you for every purchase you make. We believe
-        that every transaction, whether it's buying essentials, indulging in
-        your favorite hobbies, or managing your everyday expenses, should be
-        rewarding and fulfilling. Our journey began with a vision to bridge the
-        gap between everyday purchases and meaningful rewards, especially for
-        gamers and users like you. We understand the passion and dedication you
-        put into your gaming experiences and daily activities, and we're here to
-        amplify that passion with exciting rewards and opportunities.
-      </p>
-      <h2 class="text-center mb-8 text-2xl font-semibold">
-        Here's why we're here
-      </h2>
-      <ol class="mb-10 [&_li]:list-decimal mx-auto lg:w-[75%]">
-        <li>
-          <b>Value in Every Purchase:</b> We're committed to adding value to
-          your life by turning your routine purchases into valuable rewards.
-          Whether you're buying Airtime or Internet data, paying bills, or
-          shopping online, every transaction counts towards unlocking exclusive
-          benefits and experiences.
-        </li>
-        <li>
-          <b>Empowering Gamers:</b>
-          For gabmers, Trix is more than just a rewards platform. It's a gateway
-          to enhance your gaming journey with in-game currency, virtual items,
-          game codes, and exclusive merchandise. Level up your gaming experience
-          with Trix rewards tailored to your gaming preferences.
-        </li>
-        <li>
-          <b>Personalized Experience:</b>
-          We believe in personalization. That's why Trix offers personalized
-          rewards based on your interests, shopping habits, and gaming choices.
-          Your journey with us is unique, and we're here to make it memorable.
-        </li>
-        <li>
-          <b>Community Connection:</b>
-          Join a vibrant community of like-minded individuals who share your
-          passion for gaming and rewarding experiences. Connect, engage, and
-          discover new opportunities together on the Trix platform.
-        </li>
-        <li>
-          <b>Innovation and Transparency:</b>
-          Our platform is built on innovation and transparency. We leverage the
-          latest technologies to ensure secure transactions, real-time rewards
-          tracking, and transparent communication with our users.
-        </li>
-        <li>
-          <b>Partnerships for Excellence:</b>
-          Through strategic partnerships with leading brands, gaming companies,
-          and retailers, we bring you the best rewards, deals, and exclusive
-          offers. Your loyalty to Trix opens doors to a world of possibilities.
-        </li>
-      </ol>
-      <p class="lg:w-[75%] mb-8 mx-auto text-center">
-        Join us on this exciting journey as we redefine the way you shop, game,
-        and experience rewards. With Trix, every purchase is a step towards
-        unlocking a world of rewards and endless possibilities.
-      </p>
-      <h2 class="text-center mb-8 text-2xl font-semibold">
-        Welcome to Trix - Where Rewards Await Every Transaction!
-      </h2>
-    </section>
+  <section class="my-14 mt-20 lg:px-0 px-8">
+    <h2 class="text-center mb-8 text-2xl font-semibold">
+      THE BEST TEAMS GIVE THE <br />
+      BEST REWARD
+    </h2>
+    <h3 class="text-center mb-4 text-lg font-semibold capitalize">Trix</h3>
+    <p class="text-center mb-8 xl:w-[40%] lg:w-[60%] mx-auto">
+      Trix is an innovative platform that turns your everyday purchases into
+      exciting rewards for gamers and users alike. We believe in adding value
+      to every transaction you make, whether it's buying Airtime or Internet
+      data, paying bills, or shopping online
+    </p>
+    <h2 class="text-center mb-8 text-2xl font-semibold">Why We Are Here</h2>
+    <p class="text-center mb-8 xl:w-[40%] lg:w-[60%] mx-auto">
+      At Trix, we're driven by a simple yet powerful mission: to revolutionize
+      the way you shop and reward you for every purchase you make. We believe
+      that every transaction, whether it's buying essentials, indulging in
+      your favorite hobbies, or managing your everyday expenses, should be
+      rewarding and fulfilling. Our journey began with a vision to bridge the
+      gap between everyday purchases and meaningful rewards, especially for
+      gamers and users like you. We understand the passion and dedication you
+      put into your gaming experiences and daily activities, and we're here to
+      amplify that passion with exciting rewards and opportunities.
+    </p>
+    <h2 class="text-center mb-8 text-2xl font-semibold">
+      Here's why we're here
+    </h2>
+    <ol class="mb-10 [&_li]:list-decimal mx-auto lg:w-[75%]">
+      <li>
+        <b>Value in Every Purchase:</b> We're committed to adding value to
+        your life by turning your routine purchases into valuable rewards.
+        Whether you're buying Airtime or Internet data, paying bills, or
+        shopping online, every transaction counts towards unlocking exclusive
+        benefits and experiences.
+      </li>
+      <li>
+        <b>Empowering Gamers:</b>
+        For gabmers, Trix is more than just a rewards platform. It's a gateway
+        to enhance your gaming journey with in-game currency, virtual items,
+        game codes, and exclusive merchandise. Level up your gaming experience
+        with Trix rewards tailored to your gaming preferences.
+      </li>
+      <li>
+        <b>Personalized Experience:</b>
+        We believe in personalization. That's why Trix offers personalized
+        rewards based on your interests, shopping habits, and gaming choices.
+        Your journey with us is unique, and we're here to make it memorable.
+      </li>
+      <li>
+        <b>Community Connection:</b>
+        Join a vibrant community of like-minded individuals who share your
+        passion for gaming and rewarding experiences. Connect, engage, and
+        discover new opportunities together on the Trix platform.
+      </li>
+      <li>
+        <b>Innovation and Transparency:</b>
+        Our platform is built on innovation and transparency. We leverage the
+        latest technologies to ensure secure transactions, real-time rewards
+        tracking, and transparent communication with our users.
+      </li>
+      <li>
+        <b>Partnerships for Excellence:</b>
+        Through strategic partnerships with leading brands, gaming companies,
+        and retailers, we bring you the best rewards, deals, and exclusive
+        offers. Your loyalty to Trix opens doors to a world of possibilities.
+      </li>
+    </ol>
+    <p class="lg:w-[75%] mb-8 mx-auto text-center">
+      Join us on this exciting journey as we redefine the way you shop, game,
+      and experience rewards. With Trix, every purchase is a step towards
+      unlocking a world of rewards and endless possibilities.
+    </p>
+    <h2 class="text-center mb-8 text-2xl font-semibold">
+      Welcome to Trix - Where Rewards Await Every Transaction!
+    </h2>
+  </section>
 
-    <footer class="bg-black text-white mt-32 p-4">
-      <p>Follow us on</p>
-      <ul class="border-b-2 flex items-center gap-4 border-white py-4 my-4">
-        <li>
-          <img
-            src="/svg/facebook.svg"
-            alt="facebook icon"
-            width="21.03px"
-            height="21.03px" />
-        </li>
-        <li>
-          <img
-            src="/svg/twitter.svg"
-            alt="twitter icon"
-            width="21.03px"
-            height="21.03px" />
-        </li>
-        <li>
-          <img
-            src="/svg/instagram.svg"
-            alt="instagram icon"
-            width="21.03px"
-            height="21.03px" />
-        </li>
-      </ul>
+  <footer class="bg-black text-white mt-32 p-4">
+    <p>Follow us on</p>
+    <ul class="border-b-2 flex items-center gap-4 border-white py-4 my-4">
+      <li>
+        <img src="/svg/facebook.svg" alt="facebook icon" width="21.03px" height="21.03px" />
+      </li>
+      <li>
+        <img src="/svg/twitter.svg" alt="twitter icon" width="21.03px" height="21.03px" />
+      </li>
+      <li>
+        <img src="/svg/instagram.svg" alt="instagram icon" width="21.03px" height="21.03px" />
+      </li>
+    </ul>
 
-      <div class="flex items-center justify-between">
-        <div class="flex-col flex items-start gap-2">
-          <div class="space-x-4">
-            <span><a href="/src/pages/terms.html">Terms of Service</a></span>
-            <span><a href="/src/pages/policy.html">Privacy Policy</a></span>
-          </div>
-          <span>Cratebux.ng</span>
-          <span>Delta State, Nigeria</span>
+    <div class="flex items-center justify-between">
+      <div class="flex-col flex items-start gap-2">
+        <div class="space-x-4">
+          <span><a href="/src/pages/terms.html">Terms of Service</a></span>
+          <span><a href="/src/pages/policy.html">Privacy Policy</a></span>
         </div>
-
-        <img
-          src="/svg/trix-logo.svg"
-          alt="trix logo"
-          class="w-[61px] h-[30px] lg:w-[141px] lg:h-[89px]" />
+        <span>Cratebux.ng</span>
+        <span>Delta State, Nigeria</span>
       </div>
-    </footer>
-  </body>
+
+      <img src="/svg/trix-logo.svg" alt="trix logo" class="w-[61px] h-[30px] lg:w-[141px] lg:h-[89px]" />
+    </div>
+  </footer>
+</body>
+
 </html>
