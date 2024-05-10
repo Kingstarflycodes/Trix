@@ -23,6 +23,13 @@ body {
   font-family: 'Poppins', sans-serif;
 }
 
+table,
+th,
+td {
+  border: 1.5px solid gray;
+  border-collapse: collapse;
+}
+
 .dropbtn1::after {
   content: '';
   @apply hidden bg-transparent absolute lg:left-[12vw] xl:left-[10vw] bottom-0 h-[7vh] lg:w-[32vw] xl:w-[28vw];

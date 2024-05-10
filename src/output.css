@@ -992,6 +992,11 @@ video {
   height: 220px;
 }
 
+.size-\[40px\]{
+  width: 40px;
+  height: 40px;
+}
+
 .h-3{
   height: 0.75rem;
 }
@@ -1642,6 +1647,10 @@ video {
   justify-items: stretch;
 }
 
+.gap-1{
+  gap: 0.25rem;
+}
+
 .gap-10{
   gap: 2.5rem;
 }
@@ -2205,6 +2214,11 @@ video {
   background-color: #000000ab;
 }
 
+.bg-\[\#252430\]{
+  --tw-bg-opacity: 1;
+  background-color: rgb(37 36 48 / var(--tw-bg-opacity));
+}
+
 .bg-\[\#ffffffc0\]{
   background-color: #ffffffc0;
 }
@@ -2408,6 +2422,11 @@ video {
   padding-right: 0.75rem;
 }
 
+.px-4{
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
 .px-5{
   padding-left: 1.25rem;
   padding-right: 1.25rem;
@@ -2448,9 +2467,18 @@ video {
   padding-bottom: 1rem;
 }
 
+.py-6{
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
+}
+
 .py-8{
   padding-top: 2rem;
   padding-bottom: 2rem;
+}
+
+.pb-10{
+  padding-bottom: 2.5rem;
 }
 
 .pl-10{
@@ -2698,6 +2726,11 @@ video {
   color: rgb(59 130 246 / var(--tw-text-opacity));
 }
 
+.text-gold{
+  --tw-text-opacity: 1;
+  color: rgb(223 161 0 / var(--tw-text-opacity));
+}
+
 .text-gray-400{
   --tw-text-opacity: 1;
   color: rgb(156 163 175 / var(--tw-text-opacity));
@@ -2708,9 +2741,19 @@ video {
   color: rgb(107 114 128 / var(--tw-text-opacity));
 }
 
+.text-orange{
+  --tw-text-opacity: 1;
+  color: rgb(241 102 7 / var(--tw-text-opacity));
+}
+
 .text-peach{
   --tw-text-opacity: 1;
   color: rgb(246 99 100 / var(--tw-text-opacity));
+}
+
+.text-purple{
+  --tw-text-opacity: 1;
+  color: rgb(103 57 157 / var(--tw-text-opacity));
 }
 
 .text-sky-500{
@@ -3110,6 +3153,11 @@ html {
 
 body {
   font-family: 'Poppins', sans-serif;
+}
+
+table, th, td {
+  border: 1.5px solid gray;
+  border-collapse: collapse;
 }
 
 .dropbtn1::after {
@@ -3540,6 +3588,11 @@ h3 {
   .md\:text-\[5\.5rem\]{
     font-size: 5.5rem;
   }
+
+  .md\:text-2xl{
+    font-size: 1.5rem;
+    line-height: 2rem;
+  }
 }
 
 @media (min-width: 1024px){
@@ -3730,12 +3783,20 @@ h3 {
     grid-template-columns: repeat(3, minmax(0, 1fr));
   }
 
+  .lg\:grid-cols-4{
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+  }
+
   .lg\:flex-row{
     flex-direction: row;
   }
 
   .lg\:items-start{
     align-items: flex-start;
+  }
+
+  .lg\:items-end{
+    align-items: flex-end;
   }
 
   .lg\:items-center{
@@ -3959,4 +4020,13 @@ h3 {
 
 .\[\&_p\]\:p-2 p{
   padding: 0.5rem;
+}
+
+.\[\&_td\]\:py-6 td{
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
+}
+
+.\[\&_th\]\:w-1\/4 th{
+  width: 25%;
 }
