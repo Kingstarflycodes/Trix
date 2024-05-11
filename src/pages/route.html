@@ -2,7 +2,18 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
+    <link rel="icon" href="/img/Trix.png" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Flowbite -->
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.css"
+      rel="stylesheet" />
+    <script
+      defer
+      src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.js"></script>
+    <!-- Flowbite -->
+
     <link rel="stylesheet" href="/src/output.css" />
     <script defer src="/src/pages/routes.js"></script>
     <script defer src="/src/pages/global.js"></script>
@@ -13,31 +24,56 @@
       class="lg:w-[85%] hidden lg:block lg:h-[28vh] absolute top-0 left-1/2 -translate-x-1/2 -z-10 bg-pale"></div>
 
     <header
-      class="header-paddings bg-black text-white lg:rounded-lg flex items-center justify-between lg:gap-8 w-full">
+      class="header-paddings relative bg-black text-white lg:rounded-lg flex items-center justify-between lg:gap-8 w-full">
       <a href="/src/pages/home.html">
         <img src="/svg/trix-logo.svg" width="99" height="30" alt="trix logo" />
       </a>
 
       <nav class="hidden lg:flex items-center justify-between">
         <ul class="flex items-center gap-6 [&_li]:cursor-pointer">
-          <li class="text-gray-500">
+          <li class="text-gray-500 dropbtn1">
             <a href="/src/pages/career.html">Careers</a>
+            <div
+              class="px-3 dropdown-content1 absolute -bottom-[54%] hidden left-0 right-0 bg-darkbg text-white py-4 w-[91%] mx-auto">
+              <ul class="font-medium flex items-center gap-6">
+                <li>Why You Might Love It Here</li>
+                <li>Joining Trix</li>
+                <li>Open Positions</li>
+              </ul>
+            </div>
           </li>
-          <li class="text-gray-500">
+          <li class="text-gray-500 dropbtn2">
             <a href="/src/pages/support.html">Support</a>
+            <div
+              class="px-3 dropdown-content2 absolute -bottom-[54%] hidden left-0 right-0 bg-darkbg text-white py-4 w-[91%] mx-auto">
+              <ul class="font-medium flex items-center gap-6">
+                <li>Be Safe & Play Fair</li>
+              </ul>
+            </div>
           </li>
-          <li class="text-gray-500">
+          <li class="text-gray-500 dropbtn3">
             <a href="/src/pages/about.html">About Us</a>
+            <div
+              class="px-3 dropdown-content3 absolute -bottom-[54%] hidden left-0 right-0 bg-darkbg text-white py-4 w-[91%] mx-auto">
+              <ul class="font-medium flex items-center gap-6">
+                <li>Events</li>
+              </ul>
+            </div>
           </li>
         </ul>
       </nav>
 
-      <div class="ml-auto hidden lg:flex items-center gap-4">
+      <div
+        class="ml-auto hidden lg:flex items-center gap-4 [&_img]:cursor-pointer">
         <img src="/svg/trix-chat.svg" alt="trix chat" />
-        <img src="/svg/whatsapp.svg" alt="whatsapp logo" />
+        <img
+          width="40px"
+          height="40px"
+          src="/svg/whatsapp.svg"
+          alt="whatsapp logo" />
       </div>
 
-            <!-- Mobile nav bar -->
+      <!-- Mobile nav bar -->
       <div class="lg:hidden z-10">
         <button class="openBtn size-10">
           <img
@@ -50,16 +86,107 @@
         </button>
 
         <div
-          class="menu hidden flex-col z-20 text-center items-center justify-center gap-4 absolute h-screen top-0 left-0 right-0 py-6 bg-black">
-          <ul class="[&_li]:cursor-pointer space-y-6 text-xl">
-            <li class="text-gray-500">
-              <a href="/src/pages/career.html">Careers</a>
+          class="menu hidden flex-col z-20 text-center items-center justify-center gap-4 absolute h-screen top-0 left-0 right-0 py-10 pt-20 bg-black">
+          <ul
+            class="[&_li]:cursor-pointer hover:[&_li_a]:underline w-full space-y-6 text-xl"
+            id="accordion-collapse"
+            data-accordion="collapse"
+            data-active-classes="text-sky-600">
+            <li id="accordion-collapse-heading-1">
+              <span
+                class="flex items-center justify-between w-[80%] p-5 font-medium mx-auto rtl:text-right text-gray-500 gap-3"
+                data-accordion-target="#accordion-collapse-body-1"
+                aria-expanded="false"
+                aria-controls="accordion-collapse-body-1">
+                <a href="/src/pages/career.html">Careers</a>
+                <svg
+                  data-accordion-icon
+                  class="w-3 h-3 rotate-180 shrink-0"
+                  aria-hidden="true"
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 10 6">
+                  <path
+                    stroke="currentColor"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M9 5 5 1 1 5" />
+                </svg>
+              </span>
+              <div
+                class="hidden my-4 bg-gray-600 rounded-lg text-white p-6 w-[80%] mx-auto"
+                id="accordion-collapse-body-1"
+                aria-labelledby="accordion-collapse-heading-1">
+                <ul class="font-medium text-center space-y-3">
+                  <li>Why You Might Love It Here</li>
+                  <li>Joining Trix</li>
+                  <li>Open Positions</li>
+                </ul>
+              </div>
             </li>
-            <li class="text-gray-500">
-              <a href="/src/pages/support.html">Support</a>
+
+            <li id="accordion-collapse-heading-2">
+              <span
+                class="flex items-center justify-between w-[80%] p-5 font-medium mx-auto rtl:text-right text-gray-500 gap-3"
+                data-accordion-target="#accordion-collapse-body-2"
+                aria-expanded="false"
+                aria-controls="accordion-collapse-body-2">
+                <a href="/src/pages/support.html">Support</a>
+                <svg
+                  data-accordion-icon
+                  class="w-3 h-3 rotate-180 shrink-0"
+                  aria-hidden="true"
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 10 6">
+                  <path
+                    stroke="currentColor"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M9 5 5 1 1 5" />
+                </svg>
+              </span>
+              <div
+                class="hidden my-4 bg-gray-600 rounded-lg text-white p-6 w-[80%] mx-auto"
+                id="accordion-collapse-body-2"
+                aria-labelledby="accordion-collapse-heading-2">
+                <ul class="font-medium text-center space-y-3">
+                  <li>Be Safe & Play Fair</li>
+                </ul>
+              </div>
             </li>
-            <li class="text-gray-500">
-              <a href="/src/pages/about.html">About Us</a>
+            <li>
+              <span
+                class="flex text-gray-500 items-center justify-between w-[80%] p-5 font-medium mx-auto rtl:text-rightgap-3"
+                data-accordion-target="#accordion-collapse-body-3"
+                aria-expanded="false"
+                aria-controls="accordion-collapse-body-2">
+                <a href="/src/pages/about.html">About Us</a>
+                <svg
+                  data-accordion-icon
+                  class="w-3 h-3 rotate-180 shrink-0"
+                  aria-hidden="true"
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 10 6">
+                  <path
+                    stroke="currentColor"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M9 5 5 1 1 5" />
+                </svg>
+              </span>
+              <div
+                class="hidden my-4 bg-gray-600 rounded-lg text-white p-6 w-[80%] mx-auto"
+                id="accordion-collapse-body-3"
+                aria-labelledby="accordion-collapse-heading-3">
+                <ul class="font-medium text-center space-y-3">
+                  <li>Events</li>
+                </ul>
+              </div>
             </li>
           </ul>
 
@@ -74,13 +201,6 @@
               height="50px"
               src="/svg/whatsapp.svg"
               alt="whatsapp logo" />
-            <a href="/src/pages/profile.html">
-              <img
-                width="60px"
-                height="60px"
-                src="/img/avatar-image-4.png"
-                alt="avatar image" />
-            </a>
           </div>
         </div>
       </div>
@@ -93,69 +213,79 @@
       <h1 class="text-3xl font-semibold text-center uppercase mb-4">
         claim your trix id
       </h1>
-      <article
-        class="flex justify-center overflow-x-scroll paddings bg-pale gap-6 items-end [&_img]:border-white [&_img]:border-8 [&_img]:rounded-full">
+
+      <div
+        class="size-[220px] my-8 rounded-full mx-auto selected-avatar flex items-center justify-center bg-white gap-4 border-pale border-8">
+        <p class="text-center font-medium text-xl text-black uppercase">
+          Select Avatar
+        </p>
+      </div>
+      <div
+        class="avatar-container flex items-center justify-center flex-wrap paddings bg-pale gap-4 [&_img]:border-white [&_img]:cursor-pointer [&_img]:border-8 [&_img]:rounded-full [&_img]:size-[160.67px]">
         <div>
           <img
-            width="138.67px"
-            height="138.67px"
+            class="avatar"
             src="/img/avatar-image-1.png"
-            alt="avatar image" />
+            alt="avatar image 1"
+            data-avatar-id="1" />
           <h2 class="text-lg font-semibold text-center mt-4">ShadowBlade87</h2>
         </div>
         <div>
           <img
-            width="138.67px"
-            height="138.67px"
+            class="avatar"
             src="/img/avatar-image-2.png"
-            alt="avatar image" />
+            alt="avatar image 2"
+            data-avatar-id="2" />
           <h2 class="text-lg font-semibold text-center mt-4">
             PhoenixRising23
           </h2>
         </div>
         <div>
           <img
-            width="138.67px"
-            height="138.67px"
+            class="avatar"
             src="/img/avatar-image-3.png"
-            alt="avatar image" />
+            alt="avatar image 3"
+            data-avatar-id="3" />
           <h2 class="text-lg font-semibold text-center mt-4">
             ThunderStrike99
           </h2>
         </div>
-        <img
-          width="198.3px"
-          height="198.3px"
-          src="/img/avatar-image-4.png"
-          alt="avatar image" />
         <div>
           <img
-            width="138.67px"
-            height="138.67px"
+            class="avatar"
+            src="/img/avatar-image-4.png"
+            alt="avatar image 4"
+            data-avatar-id="4" />
+          <h2 class="text-lg font-semibold text-center mt-4">FireRoad04</h2>
+        </div>
+        <div>
+          <img
+            class="avatar"
             src="/img/avatar-image-5.png"
-            alt="avatar image" />
+            alt="avatar image 5"
+            data-avatar-id="5" />
           <h2 class="text-lg font-semibold text-center mt-4">MysticGamerx</h2>
         </div>
         <div>
           <img
-            width="138.67px"
-            height="138.67px"
+            class="avatar"
             src="/img/avatar-image-6.png"
-            alt="avatar image" />
+            alt="avatar image 6"
+            data-avatar-id="6" />
           <h2 class="text-lg font-semibold text-center mt-4">BlazeRunner64</h2>
         </div>
         <div>
           <img
-            width="138.67px"
-            height="138.67px"
+            class="avatar"
             src="/img/avatar-image-7.png"
-            alt="avatar image" />
+            alt="avatar image 7"
+            data-avatar-id="7" />
           <h2 class="text-lg font-semibold text-center mt-4">FrostByte88</h2>
         </div>
-      </article>
+      </div>
 
       <form
-        class="form lg:w-[25vw] w-[90%] rounded-lg p-4 mt-8 bg-white mx-auto flex items-center flex-col gap-4 [&_input]:rounded-md [&_input]:bg-white [&_input]:p-2">
+        class="form lg:w-[26vw] w-[90%] rounded-lg p-4 mt-8 bg-white mx-auto flex items-center flex-col gap-4 [&_input]:rounded-md [&_input]:bg-white [&_input]:p-2">
         <div
           class="flex items-center w-full rounded-lg p-2 border border-black">
           <span
@@ -193,7 +323,8 @@
         <p class="text-center hidden pText">your username is your ID</p>
       </form>
 
-      <dialog class="rounded-lg bg-white w-[90%] lg:w-[50vw] p-6 text-center space-y-6">
+      <dialog
+        class="rounded-lg bg-white w-[90%] lg:w-[50vw] p-6 text-center space-y-6">
         <h2 class="text-3xl font-semibold">You are all set!</h2>
         <p>
           Congratulations on creating your Trix user ID ! As a token of
@@ -210,7 +341,104 @@
         </button>
       </dialog>
     </main>
+    <!-- <div class="avatar-selection">
+      <div class="selected-avatar">
+        <p>Select Avatar</p>
+      </div>
+      <div class="avatar-container">
+        <img
+          src="https://avataaars.io/?avatarStyle=Circle&topType=LongHairStraight&accessoriesType=Blank&hairColor=BrownDark&facialHairType=Blank&clotheType=BlazerShirt&eyeType=Default&eyebrowType=Default&mouthType=Default&skinColor=Light"
+          alt="Avatar 1"
+          data-avatar-id="1"
+          class="avatar" />
+        <img
+          src="https://avataaars.io/?avatarStyle=Circle&topType=Hijab&accessoriesType=Wayfarers&hatColor=Blue03&hairColor=Black&facialHairType=MoustacheFancy&clotheType=Overall&clotheColor=Gray01&eyeType=Default&eyebrowType=UpDown&mouthType=Twinkle&skinColor=Pale"
+          alt="Avatar 2"
+          data-avatar-id="2"
+          class="avatar" />
+        <img
+          src="https://avataaars.io/?avatarStyle=Circle&topType=Turban&accessoriesType=Prescription01&hatColor=Red&hairColor=Brown&facialHairType=BeardLight&facialHairColor=Black&clotheType=GraphicShirt&clotheColor=PastelOrange&graphicType=Skull&eyeType=Dizzy&eyebrowType=UpDownNatural&mouthType=Vomit&skinColor=Brown"
+          alt="Avatar 3"
+          data-avatar-id="3"
+          class="avatar" />
+        <img
+          src="https://avataaars.io/?avatarStyle=Circle&topType=Eyepatch&accessoriesType=Prescription01&hairColor=PastelPink&facialHairType=BeardLight&facialHairColor=Black&clotheType=CollarSweater&clotheColor=PastelGreen&eyeType=WinkWacky&eyebrowType=AngryNatural&mouthType=ScreamOpen&skinColor=DarkBrown"
+          alt="Avatar 4"
+          data-avatar-id="4"
+          class="avatar" />
+        <img
+          src="https://avataaars.io/?avatarStyle=Circle&topType=LongHairStraight2&accessoriesType=Prescription02&hairColor=Blonde&facialHairType=BeardLight&facialHairColor=Blonde&clotheType=BlazerSweater&clotheColor=PastelYellow&eyeType=EyeRoll&eyebrowType=SadConcerned&mouthType=Smile&skinColor=Pale"
+          data-avatar-id="5"
+          class="avatar" />
+        <img
+          src="https://avataaars.io/?avatarStyle=Circle&topType=LongHairStraight&accessoriesType=Round&hairColor=SilverGray&facialHairType=MoustacheFancy&facialHairColor=BlondeGolden&clotheType=CollarSweater&clotheColor=PastelBlue&eyeType=Dizzy&eyebrowType=SadConcernedNatural&mouthType=Smile&skinColor=Light"
+          alt="Avatar 6"
+          data-avatar-id="6"
+          class="avatar" />
+      </div>
+    </div> -->
 
     <div class="w-[85%] h-[10vh] mx-auto bg-pale"></div>
   </body>
+  <!-- <style>
+    .avatar-selection {
+      display: flex;
+      align-items: center;
+    }
+
+    .selected-avatar {
+      width: auto;
+      height: auto;
+      aspect-ratio: 1/1;
+      border-radius: 50%;
+      background-color: #ddd;
+      text-align: center;
+      line-height: 100px;
+      font-weight: bold;
+    }
+
+    .avatar-container {
+      margin-left: auto;
+      display: flex;
+      overflow-x: scroll;
+      scroll-behavior: smooth;
+      white-space: nowrap;
+    }
+
+    .avatar {
+      width: 50px;
+      height: 50px;
+      margin: 0 10px;
+      border-radius: 50%;
+      cursor: pointer;
+    }
+
+    .avatar.selected {
+      width: 100px;
+      height: 100px;
+    }
+  </style> -->
+  <script>
+    const avatarContainer = document.querySelector('.avatar-container');
+    const selectedAvatar = document.querySelector('.selected-avatar');
+
+    avatarContainer.addEventListener('click', (event) => {
+      if (event.target.classList.contains('avatar')) {
+        const selectedAvatarId = event.target.dataset.avatarId;
+        const selectedAvatarImg = event.target;
+
+        // Remove selected class from previously selected avatar
+        const previouslySelected = avatarContainer.querySelector('.selected');
+        if (previouslySelected) {
+          previouslySelected.classList.remove('selected');
+        }
+
+        // Add selected class to clicked avatar
+        selectedAvatarImg.classList.add('selected');
+
+        // Update the selected avatar image in the "selected-avatar" element
+        selectedAvatar.innerHTML = `<img src="${selectedAvatarImg.src}" alt="Selected Avatar">`;
+      }
+    });
+  </script>
 </html>
