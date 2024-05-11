@@ -11,6 +11,18 @@ module.exports = {
         pale: '#F6F8F3',
         paleGray: '#DADADA',
         darkbg: '#000000b0',
+        purple: '#67399D',
+        gold: '#F8E231',
+        silver: '#C7C5B8',
+        bronze: "#A87900",
+        gray: '#555555',
+        mgray: '#D6D1D5',
+        lgray: '#F8F7F8',
+        green: '#03543F',
+        lgreen: '#DEF7EC',
+        orange: '#ED8936',
+        lorange: '#FEEBC8'
+        
       }
     },
   },
