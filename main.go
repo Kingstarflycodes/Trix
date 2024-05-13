@@ -7,7 +7,7 @@ import (
 
 func main() {
 	// Parse HTML template
-	tmpl := template.Must(template.ParseFiles("templates/index.html"))
+	tmpl := template.Must(template.ParseFiles("/templates/index.html"))
 
 	// Define a handler function to render the template
 	http.HandleFunc("/", func(w http.ResponseWriter, r *http.Request) {
