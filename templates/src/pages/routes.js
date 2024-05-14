@@ -40,6 +40,6 @@ nextBtn.addEventListener('click', () => isFilled());
 modalClaim.addEventListener('click', () => {
   modal.close();
   setTimeout(() => {
-    window.location.href = '/src/pages/home.html';
+    window.location.href = 'home.html';
   }, 2000);
 });

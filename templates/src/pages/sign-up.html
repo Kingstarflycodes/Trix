@@ -33,10 +33,11 @@
           <div class="w-full bg-gray-400 h-[0.095rem]"></div>
         </div>
 
-        <form class="grid gap-4" action="">
+        <form class="grid gap-4" action="/signup" method="post">
           <label class="font-semibold" for="name">
             Name <span class="text-peach">*</span>
             <input
+              name="name"
               class="w-full mt-2 font-normal border border-gray-400 py-2 rounded-3xl pl-4"
               placeholder="Enter your name"
               type="text"
@@ -47,6 +48,7 @@
           <label class="font-semibold" for="email">
             Email <span class="text-peach">*</span>
             <input
+              name="email"
               class="w-full mt-2 font-normal border border-gray-400 py-2 rounded-3xl pl-4"
               placeholder="Enter your email"
               type="email"
@@ -57,6 +59,7 @@
           <label class="font-semibold" for="password">
             Password <span class="text-peach">*</span>
             <input
+              name="password"
               class="w-full border border-gray-400 mt-2 font-normal py-2 rounded-3xl pl-4"
               placeholder="Enter your password"
               type="password"
@@ -73,7 +76,7 @@
               I agree to all Terms and privacy policy
             </label>
           </div>
-          <button class="w-full text-white py-2 rounded-3xl bg-black">
+          <button type="submit" class="w-full text-white py-2 rounded-3xl bg-black">
             Sign Up
           </button>
           <p class="pt-3">
