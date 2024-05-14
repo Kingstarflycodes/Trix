@@ -17,6 +17,7 @@
 
     <link rel="stylesheet" href="/src/output.css" />
     <script defer src="/src/pages/global.js"></script>
+  <script src="/src/pages/script.js"></script>    
   </head>
 
   <body class="overflow-x-hidden w-screen lg:px-10 lg:pt-6">
@@ -64,19 +65,25 @@
       </nav>
 
       <div
-        class="ml-auto hidden lg:flex items-center gap-4 [&_img]:cursor-pointer">
-        <img width="20px" src="/svg/trix-chat.svg" alt="trix chat" />
-        <img
-          width="40px"
-          height="40px"
-          src="/svg/whatsapp.svg"
-          alt="whatsapp logo" />
-        <a href="/src/pages/profile.html">
+        class="ml-auto hidden list-none lg:flex items-center gap-4 [&_img]:cursor-pointer">
+        <li class="text-gray-500 dropbtn2">
+          <a href="" class="font-semibold pr-5 text-white">CREATE ACCOUNT</a>
+          <div
+            class="px-3 dropdown-content2 absolute -bottom-[54%] hidden left-0 right-0 bg-darkbg text-white py-4 w-[91%] mx-auto">
+            <ul class="font-medium flex items-center gap-6">
+              <li>Connect shop</li>
+            </ul>
+          </div>
+        </li>
+        <a href="/src/pages/reward.html">
+          <img src="/svg/trix-chat.svg" alt="trix chat" />
+        </a>
+        <a href=" https://wa.me/2349056974792">
           <img
             width="40px"
             height="40px"
-            src="/img/avatar-image-4.png"
-            alt="avatar image" />
+            src="/svg/whatsapp.svg"
+            alt="whatsapp logo" />
         </a>
       </div>
 
@@ -166,7 +173,7 @@
             </li>
             <li>
               <span
-                class="flex items-center justify-between text-gray-500 w-[80%] p-5 font-medium mx-auto rtl:text-rightgap-3"
+                class="flex text-gray-500 items-center justify-between w-[80%] p-5 font-medium mx-auto rtl:text-rightgap-3"
                 data-accordion-target="#accordion-collapse-body-3"
                 aria-expanded="false"
                 aria-controls="accordion-collapse-body-2">
@@ -198,16 +205,20 @@
           </ul>
 
           <div class="mt-6 flex items-center gap-8">
-            <img
-              class="w-auto"
-              height="60px"
-              src="/svg/trix-chat.svg"
-              alt="trix chat" />
-            <img
-              width="50px"
-              height="50px"
-              src="/svg/whatsapp.svg"
-              alt="whatsapp logo" />
+            <a href="/src/pages/reward.html">
+              <img
+                class="w-auto"
+                height="60px"
+                src="/svg/trix-chat.svg"
+                alt="trix chat" />
+            </a>
+              <a href=" https://wa.me/2349056974792">
+                <img
+                  width="40px"
+                  height="40px"
+                  src="/svg/whatsapp.svg"
+                  alt="whatsapp logo" />
+              </a>
             <a href="/src/pages/profile.html">
               <img
                 width="60px"
@@ -233,13 +244,20 @@
         alt="profile image" />
 
       <div
-        class="w-[25vw] bg-white mx-auto flex items-center mb-4 flex-col gap-6 [&_p]:rounded-md [&_p]:p-2">
-        <div class="flex items-center rounded-md p-2 border border-black">
-          <span
-            class="px-2 py-1 uppercase text-white text-xl bg-black rounded-md"
-            >id
-          </span>
-          <p class="w-full ml-2">riderezzy#01101</p>
+        class="w-[35vw] bg-white mx-auto flex items-center mb-4 flex-col gap-6 [&_p]:rounded-md [&_p]:p-2">
+        <div class="flex">
+          <div class="flex items-center rounded-md p-2 border border-black">
+            <span
+              class="px-2 py-1 uppercase text-white text-xl bg-black rounded-md"
+              >id
+            </span>
+            <!-- <p id="myInput" class="w-full ml-2">riderezzy#01101</p> -->
+            <input  class="border-none outline-none ml-5 w-40" id="myInput" value="riderezzy#01101" readonly="readonly" type="text" >
+          </div>
+          <div onclick="Copy()" class="flex items-center pl-5">
+            <img class="copy" width="33" height="33" src="/svg/Copy.svg" alt="Copy Icon">
+            <p class="-5">share my id</p>
+          </div>
         </div>
         <div
           class="activities px-3 py-1 text-white text-xl bg-black rounded-md">
@@ -291,21 +309,40 @@
       <ul
         class="mx-auto flex justify-center items-center gap-6 [&_li]:cursor-pointer">
         <li>
-          <img
-            width="26px"
-            height="26px"
-            src="/svg/facebook-black.svg"
-            alt="" />
+          <a href="https://www.facebook.com/profile.php?id=61559549795475&mibextid=ZbWKwL">
+            <img
+              width="26px"
+              height="26px"
+              src="/svg/facebook-black.svg"
+              alt="" />
+          </a>
         </li>
         <li>
-          <img width="26px" height="26px" src="/svg/twitter-black.svg" alt="" />
+          <a href="https://www.instagram.com/trixrewrd?igsh=eHJsYWtqaG00ZmNw">
+            <img
+              width="26px"
+              height="26px"
+              src="/svg/instagram-black.svg"
+              alt="" />
+          </a>
         </li>
         <li>
-          <img
-            width="26px"
-            height="26px"
-            src="/svg/instagram-black.svg"
-            alt="" />
+          <a href="https://pin.it/6UwnjZkV3">
+            <img
+              width="26px"
+              height="26px"
+              src="/svg/pinterest.svg"
+              alt="" />
+          </a>
+        </li>
+        <li>
+          <a href="trixrewrd@gmail.com">
+            <img
+              width="26px"
+              height="26px"
+              src="/svg/email.svg"
+              alt="" />
+          </a>
         </li>
       </ul>
       <p class="text-gray-400">© Copyrights Cratebux | All Rights Reserved</p>
