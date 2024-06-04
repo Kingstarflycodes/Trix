@@ -21,8 +21,9 @@ module.exports = {
         green: '#03543F',
         lgreen: '#DEF7EC',
         orange: '#ED8936',
-        lorange: '#FEEBC8'
-        
+        lorange: '#FEEBC8',
+        Hgrey: '#E5E5E5',
+        Dpurple: '#0A0612',
       }
     },
   },
