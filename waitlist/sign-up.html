@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="/svg/logo.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script defer src="/src/pages/global.js"></script>
+    <script
+      src="https://kit.fontawesome.com/edd99ad8ab.js"
+      crossorigin="anonymous"
+    ></script>
+    <link href="/src/output.css" rel="stylesheet" />
+    <title>Trix - Waitlist Sign Up</title>
+  </head>
+  <body
+    class="bg-purple text-white max-w-[100vw] max-h-[150vh] overflow-x-hidden"
+  >
+    <header class="header-paddings flex items-center justify-between">
+      <img class="w-40" src="/svg/logo-trix-white.svg" alt="trix logo" />
+      <div class="flex items-center gap-8">
+        <a class="hover:underline" href="/src/pages/about.html">About</a>
+        <img width="40" src="/svg/histogram.svg" alt="histogram svg" />
+      </div>
+    </header>
+
+    <section
+      class="relative -mt-14 text-center space-y-6 md:px-10 md:pt-14 pt-10 px-6"
+    >
+      <h1 class="lg:text-5xl text-3xl font-semibold">
+        Sign Up for Trix Points
+      </h1>
+      <p class="lg:w-1/2 w-[80%] mx-auto text-sm">
+        Join the waitlist and start earning TRIX Points for exciting rewards!
+      </p>
+
+      <form
+        action=""
+        class="form lg:w-[40%] mx-auto flex text-white flex-col items-center gap-3 [&_input]:p-4 [&_input]:rounded-lg [&_input]:bg-[#0a0a0a66] [&_input]:pl-12 [&_input]:w-full [&_label]:hover:cursor-pointer"
+      >
+        <div class="w-full relative">
+          <label for="email">
+            <img
+              class="absolute top-1/2 -translate-y-1/2 left-4"
+              width="25"
+              src="/waitlist-assets/mail.svg"
+              alt="mail"
+            />
+          </label>
+          <input
+            type="email"
+            id="email"
+            name="email"
+            placeholder="Enter Email"
+            required
+          />
+        </div>
+
+        <div class="w-full relative">
+          <label for="phone">
+            <img
+              class="absolute top-1/2 -translate-y-1/2 left-4"
+              width="20"
+              src="/waitlist-assets/phone.svg"
+              alt="mail"
+            />
+          </label>
+          <input
+            type="tel"
+            id="phone"
+            name="whatsapp-number"
+            minlength="11"
+            placeholder="WhatsApp Number"
+            required
+          />
+        </div>
+
+        <select
+          class="p-4 bg-[#0a0a0a66] w-full rounded-lg hover:cursor-pointer"
+          name="desc"
+          id="desc"
+          required
+        >
+          <option value="">Which best describes you?</option>
+          <option value="RS">Reward Seekers</option>
+          <option value="GATE">Gamers and Tech Enthusiasts</option>
+          <option value="RS">Reward Seekers</option>
+          <option value="GATE">Gamers and Tech Enthusiasts</option>
+          <option value="RS">Reward Seekers</option>
+          <option value="GATE">Gamers and Tech Enthusiasts</option>
+        </select>
+
+        <button
+          class="px-20 py-3 w-full font-semibold text-purple bg-white rounded-lg"
+        >
+          Sign Up
+          <img
+            class="inline-block ml-3"
+            width="25"
+            src="/waitlist-assets/arrow-right.svg"
+            alt
+          />
+        </button>
+      </form>
+    </section>
+
+    <div
+      class="absolute z-10 bottom-0 left-0 right-0 flex items-center justify-between header-paddings"
+    >
+      <p>&2024 Trix. All rights reverved</p>
+      <ul class="flex items-center justify-center gap-6">
+        <li>
+          <a href=""
+            ><img width="40" src="/waitlist-assets/facebook.svg" alt=""
+          /></a>
+        </li>
+        <li>
+          <a href=""
+            ><img width="40" src="/waitlist-assets/twitter.svg" alt=""
+          /></a>
+        </li>
+        <li>
+          <a href=""
+            ><img width="40" src="/waitlist-assets/instagram.svg" alt=""
+          /></a>
+        </li>
+        <li>
+          <a href=""
+            ><img width="40" src="/waitlist-assets/tiktok.svg" alt=""
+          /></a>
+        </li>
+      </ul>
+    </div>
+
+    <dialog
+      class="modal rounded-lg bg-purple text-white w-[90%] lg:w-[50vw] text-center space-y-10 px-16 py-20"
+    >
+      <h2 class="text-3xl font-semibold w-full">
+        You have been successfully <br />
+        added to the Trixreward waitlist
+      </h2>
+      <p>
+        Use the code below to refer friends and increase your chances of earning
+        more TRIX Points
+      </p>
+
+      <div
+        class="bg-[#00000080] relative w-[85%] mx-auto rounded-lg text-white py-3 flex"
+      >
+        <button class="copyBtn mx-6">copy</button>
+        <input
+          class="user-code bg-transparent"
+          value="TEXJD#12345"
+          readonly="readonly"
+          type="text"
+        />
+        <button
+          class="absolute top-0 right-0 bottom-0 font-semibold bg-white px-8 py-3 h-full rounded-lg text-purple"
+        >
+          Share Code
+        </button>
+      </div>
+      <button class="modalClose mt-10 rounded-md claim">Go to Dashboard</button>
+    </dialog>
+
+    <script>
+      let form = document.querySelector(".form");
+      let modal = document.querySelector(".modal");
+      let modalClose = document.querySelector(".modalClose");
+      let copyBtn = document.querySelector(".copyBtn");
+
+      function Copy() {
+        let targetText = document.querySelector(".user-code");
+        targetText.select();
+        targetText.setSelectionRange(0, 99999); // For mobile devices
+        navigator.clipboard.writeText(targetText.value);
+        alert(`User code ${targetText.value}, copied to clipboard `);
+        console.log(targetText.value);
+      }
+
+      copyBtn.addEventListener("click", () => Copy());
+
+      form.addEventListener("submit", (e) => {
+        e.preventDefault();
+        modal.showModal();
+      });
+
+      modalClose.addEventListener("click", () => {
+        modal.close();
+        setTimeout(() => {
+          window.location.href = "/src/pages/home.html";
+        }, 2000);
+      });
+    </script>
+  </body>
+</html>

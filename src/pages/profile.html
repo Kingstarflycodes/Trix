@@ -2,32 +2,41 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" href="/img/Trix.png" />
+    <link rel="icon" href="/svg/logo.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Trix - Profile</title>
 
     <!-- Flowbite -->
     <link
       href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.css"
-      rel="stylesheet" />
+      rel="stylesheet"
+    />
     <script
       defer
-      src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.js"></script>
+      src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.js"
+    ></script>
     <!-- Flowbite -->
 
     <link rel="stylesheet" href="/src/output.css" />
     <script defer src="/src/pages/global.js"></script>
-  <script src="/src/pages/script.js"></script>    
+    <script defer src="/src/pages/script.js"></script>
   </head>
 
   <body class="overflow-x-hidden w-screen lg:px-10 lg:pt-6">
     <div
-      class="lg:w-[85%] hidden lg:block lg:h-[28vh] absolute top-0 left-1/2 -translate-x-1/2 -z-10 bg-pale"></div>
+      class="lg:w-[85%] hidden lg:block lg:h-[28vh] absolute top-0 left-1/2 -translate-x-1/2 -z-10 bg-pale"
+    ></div>
 
     <header
-      class="header-paddings relative bg-black text-white lg:rounded-lg flex items-center justify-between lg:gap-8 w-full">
+      class="header-paddings relative bg-black text-white lg:rounded-lg flex items-center justify-between lg:gap-8 w-full"
+    >
       <a href="/src/pages/home.html">
-        <img src="/svg/trix-logo.svg" width="99" height="30" alt="trix logo" />
+        <img
+          src="/svg/logo-trix-white.svg"
+          width="130"
+          height="60"
+          alt="trix logo"
+        />
       </a>
 
       <nav class="hidden lg:flex items-center justify-between">
@@ -35,7 +44,8 @@
           <li class="text-gray-500 dropbtn1">
             <a href="/src/pages/career.html">Careers</a>
             <div
-              class="px-3 dropdown-content1 absolute -bottom-[54%] hidden left-0 right-0 bg-darkbg text-white py-4 w-[91%] mx-auto">
+              class="px-3 dropdown-content1 absolute -bottom-[54%] hidden left-0 right-0 bg-darkbg text-white py-4 w-[91%] mx-auto"
+            >
               <ul class="font-medium flex items-center gap-6">
                 <li>Why You Might Love It Here</li>
                 <li>Joining Trix</li>
@@ -46,7 +56,8 @@
           <li class="text-gray-500 dropbtn2">
             <a href="/src/pages/support.html">Support</a>
             <div
-              class="px-3 dropdown-content2 absolute -bottom-[54%] hidden left-0 right-0 bg-darkbg text-white py-4 w-[91%] mx-auto">
+              class="px-3 dropdown-content2 absolute -bottom-[54%] hidden left-0 right-0 bg-darkbg text-white py-4 w-[91%] mx-auto"
+            >
               <ul class="font-medium flex items-center gap-6">
                 <li>Be Safe & Play Fair</li>
               </ul>
@@ -55,7 +66,8 @@
           <li class="text-gray-500 dropbtn3">
             <a href="/src/pages/about.html">About Us</a>
             <div
-              class="px-3 dropdown-content3 absolute -bottom-[54%] hidden left-0 right-0 bg-darkbg text-white py-4 w-[91%] mx-auto">
+              class="px-3 dropdown-content3 absolute -bottom-[54%] hidden left-0 right-0 bg-darkbg text-white py-4 w-[91%] mx-auto"
+            >
               <ul class="font-medium flex items-center gap-6">
                 <li>Events</li>
               </ul>
@@ -65,11 +77,15 @@
       </nav>
 
       <div
-        class="ml-auto hidden list-none lg:flex items-center gap-4 [&_img]:cursor-pointer">
+        class="ml-auto hidden list-none lg:flex items-center gap-4 [&_img]:cursor-pointer"
+      >
         <li class="text-gray-500 dropbtn2">
-          <a href="/src/pages/wallet.html" class="font-semibold pr-5 text-white">CREATE ACCOUNT</a>
+          <a href="/src/pages/wallet.html" class="font-semibold pr-5 text-white"
+            >CREATE ACCOUNT</a
+          >
           <div
-            class="px-3 dropdown-content2 absolute -bottom-[54%] hidden left-0 right-0 bg-darkbg text-white py-4 w-[91%] mx-auto">
+            class="px-3 dropdown-content2 absolute -bottom-[54%] hidden left-0 right-0 bg-darkbg text-white py-4 w-[91%] mx-auto"
+          >
             <ul class="font-medium flex items-center gap-6">
               <li>Connect shop</li>
             </ul>
@@ -83,7 +99,8 @@
             width="40px"
             height="40px"
             src="/svg/whatsapp.svg"
-            alt="whatsapp logo" />
+            alt="whatsapp logo"
+          />
         </a>
       </div>
 
@@ -93,25 +110,29 @@
           <img
             class="togglerOpen"
             src="/svg/icon-hamburger.svg"
-            alt="icon hamburger" />
+            alt="icon hamburger"
+          />
         </button>
         <button class="closeBtn hidden relative z-30 size-10">
           <img src="/svg/icon-close.svg" alt="icon close" />
         </button>
 
         <div
-          class="menu hidden flex-col z-20 text-center items-center justify-center gap-4 absolute h-screen top-0 left-0 right-0 py-10 pt-20 bg-black">
+          class="menu hidden flex-col z-20 text-center items-center justify-center gap-4 absolute h-screen top-0 left-0 right-0 py-10 pt-20 bg-black"
+        >
           <ul
             class="[&_li]:cursor-pointer hover:[&_li_a]:underline w-full space-y-6 text-xl"
             id="accordion-collapse"
             data-accordion="collapse"
-            data-active-classes="text-sky-600">
+            data-active-classes="text-sky-600"
+          >
             <li id="accordion-collapse-heading-1">
               <span
                 class="flex items-center justify-between w-[80%] p-5 font-medium mx-auto rtl:text-right text-gray-500 gap-3"
                 data-accordion-target="#accordion-collapse-body-1"
                 aria-expanded="false"
-                aria-controls="accordion-collapse-body-1">
+                aria-controls="accordion-collapse-body-1"
+              >
                 <a href="/src/pages/career.html">Careers</a>
                 <svg
                   data-accordion-icon
@@ -119,19 +140,22 @@
                   aria-hidden="true"
                   xmlns="http://www.w3.org/2000/svg"
                   fill="none"
-                  viewBox="0 0 10 6">
+                  viewBox="0 0 10 6"
+                >
                   <path
                     stroke="currentColor"
                     stroke-linecap="round"
                     stroke-linejoin="round"
                     stroke-width="2"
-                    d="M9 5 5 1 1 5" />
+                    d="M9 5 5 1 1 5"
+                  />
                 </svg>
               </span>
               <div
                 class="hidden my-4 bg-gray-600 rounded-lg text-white p-6 w-[80%] mx-auto"
                 id="accordion-collapse-body-1"
-                aria-labelledby="accordion-collapse-heading-1">
+                aria-labelledby="accordion-collapse-heading-1"
+              >
                 <ul class="font-medium text-center space-y-3">
                   <li>Why You Might Love It Here</li>
                   <li>Joining Trix</li>
@@ -145,7 +169,8 @@
                 class="flex items-center justify-between w-[80%] p-5 font-medium mx-auto rtl:text-right text-gray-500 gap-3"
                 data-accordion-target="#accordion-collapse-body-2"
                 aria-expanded="false"
-                aria-controls="accordion-collapse-body-2">
+                aria-controls="accordion-collapse-body-2"
+              >
                 <a href="/src/pages/support.html">Support</a>
                 <svg
                   data-accordion-icon
@@ -153,19 +178,22 @@
                   aria-hidden="true"
                   xmlns="http://www.w3.org/2000/svg"
                   fill="none"
-                  viewBox="0 0 10 6">
+                  viewBox="0 0 10 6"
+                >
                   <path
                     stroke="currentColor"
                     stroke-linecap="round"
                     stroke-linejoin="round"
                     stroke-width="2"
-                    d="M9 5 5 1 1 5" />
+                    d="M9 5 5 1 1 5"
+                  />
                 </svg>
               </span>
               <div
                 class="hidden my-4 bg-gray-600 rounded-lg text-white p-6 w-[80%] mx-auto"
                 id="accordion-collapse-body-2"
-                aria-labelledby="accordion-collapse-heading-2">
+                aria-labelledby="accordion-collapse-heading-2"
+              >
                 <ul class="font-medium text-center space-y-3">
                   <li>Be Safe & Play Fair</li>
                 </ul>
@@ -176,7 +204,8 @@
                 class="flex text-gray-500 items-center justify-between w-[80%] p-5 font-medium mx-auto rtl:text-rightgap-3"
                 data-accordion-target="#accordion-collapse-body-3"
                 aria-expanded="false"
-                aria-controls="accordion-collapse-body-2">
+                aria-controls="accordion-collapse-body-2"
+              >
                 <a href="/src/pages/about.html">About Us</a>
                 <svg
                   data-accordion-icon
@@ -184,48 +213,56 @@
                   aria-hidden="true"
                   xmlns="http://www.w3.org/2000/svg"
                   fill="none"
-                  viewBox="0 0 10 6">
+                  viewBox="0 0 10 6"
+                >
                   <path
                     stroke="currentColor"
                     stroke-linecap="round"
                     stroke-linejoin="round"
                     stroke-width="2"
-                    d="M9 5 5 1 1 5" />
+                    d="M9 5 5 1 1 5"
+                  />
                 </svg>
               </span>
               <div
                 class="hidden my-4 bg-gray-600 rounded-lg text-white p-6 w-[80%] mx-auto"
                 id="accordion-collapse-body-3"
-                aria-labelledby="accordion-collapse-heading-3">
+                aria-labelledby="accordion-collapse-heading-3"
+              >
                 <ul class="font-medium text-center space-y-3">
                   <li>Events</li>
                 </ul>
               </div>
             </li>
           </ul>
-          
-          <a href="/src/pages/wallet.html" class="font-semibold pr-5 text-white">CREATE ACCOUNT</a>
+
+          <a href="/src/pages/wallet.html" class="font-semibold pr-5 text-white"
+            >CREATE ACCOUNT</a
+          >
           <div class="mt-6 flex items-center gap-8">
             <a href="/src/pages/reward.html">
               <img
                 class="w-auto"
                 height="60px"
                 src="/svg/trix-chat.svg"
-                alt="trix chat" />
+                alt="trix chat"
+              />
             </a>
-              <a href=" https://wa.me/2349056974792">
-                <img
-                  width="40px"
-                  height="40px"
-                  src="/svg/whatsapp.svg"
-                  alt="whatsapp logo" />
-              </a>
+            <a href=" https://wa.me/2349056974792">
+              <img
+                width="40px"
+                height="40px"
+                src="/svg/whatsapp.svg"
+                alt="whatsapp logo"
+              />
+            </a>
             <a href="/src/pages/profile.html">
               <img
                 width="60px"
                 height="60px"
                 src="/img/avatar-image-4.png"
-                alt="avatar image" />
+                alt="avatar image"
+              />
             </a>
           </div>
         </div>
@@ -242,10 +279,12 @@
         src="/img/avatar-image-4.png"
         width="138.67px"
         height="138.67px"
-        alt="profile image" />
+        alt="profile image"
+      />
 
       <div
-        class="w-[35vw] bg-white mx-auto flex items-center mb-4 flex-col gap-6 [&_p]:rounded-md [&_p]:p-2">
+        class="w-[35vw] bg-white mx-auto flex items-center mb-4 flex-col gap-6 [&_p]:rounded-md [&_p]:p-2"
+      >
         <div class="lg:flex grid">
           <div class="flex items-center rounded-md p-2 border border-black">
             <span
@@ -253,15 +292,31 @@
               >id
             </span>
             <!-- <p id="myInput" class="w-full ml-2">riderezzy#01101</p> -->
-            <input  class="border-none outline-none ml-5 w-40" id="myInput" value="riderezzy#01101" readonly="readonly" type="text" >
+            <input
+              class="border-none outline-none ml-5 w-40"
+              id="myInput"
+              value="riderezzy#01101"
+              readonly="readonly"
+              type="text"
+            />
           </div>
-          <div onclick="Copy()" class="flex items-center lg:pt-0 pt-3 justify-center lg:pl-5">
-            <img class="copy" width="33" height="33" src="/svg/Copy.svg" alt="Copy Icon">
+          <div
+            onclick="Copy()"
+            class="flex items-center lg:pt-0 pt-3 justify-center lg:pl-5"
+          >
+            <img
+              class="copy"
+              width="33"
+              height="33"
+              src="/svg/Copy.svg"
+              alt="Copy Icon"
+            />
             <p class="-5">share my id</p>
           </div>
         </div>
         <div
-          class="activities px-3 py-1 text-white text-xl bg-black rounded-md">
+          class="activities px-3 py-1 text-white text-xl bg-black rounded-md"
+        >
           Your activities
         </div>
         <!-- <div
@@ -271,9 +326,11 @@
       </div>
 
       <div
-        class="items-center flex-row overflow-hidden h-max mx-auto lg:w-[30vw] flex lg: w-full lg:items-start gap-4">
+        class="items-center flex-row overflow-hidden h-max mx-auto lg:w-[30vw] flex lg: w-full lg:items-start gap-4"
+      >
         <ul
-          class="max-h-[30vh] h-auto activities-date px-5 lg:min-w-[20%] lg:max-w-[35%] text-lg items-center overflow-y-scroll space-y-3">
+          class="max-h-[30vh] h-auto activities-date px-5 lg:min-w-[20%] lg:max-w-[35%] text-lg items-center overflow-y-scroll space-y-3"
+        >
           <li>April 25</li>
           <li>1:30 PM</li>
           <li>2:30 PM</li>
@@ -299,7 +356,8 @@
             exploring opportunities to earn more rewards!
           </p>
           <button
-            class="px-2 ml-auto py-1 uppercase bg-paleGray rounded-lg text-white">
+            class="px-2 ml-auto py-1 uppercase bg-paleGray rounded-lg text-white"
+          >
             claimed
           </button>
         </div>
@@ -308,14 +366,18 @@
 
     <footer class="text-center space-y-6 mx-auto my-8 py-8">
       <ul
-        class="mx-auto flex justify-center items-center gap-6 [&_li]:cursor-pointer">
+        class="mx-auto flex justify-center items-center gap-6 [&_li]:cursor-pointer"
+      >
         <li>
-          <a href="https://www.facebook.com/profile.php?id=61559549795475&mibextid=ZbWKwL">
+          <a
+            href="https://www.facebook.com/profile.php?id=61559549795475&mibextid=ZbWKwL"
+          >
             <img
               width="26px"
               height="26px"
               src="/svg/facebook-black.svg"
-              alt="" />
+              alt=""
+            />
           </a>
         </li>
         <li>
@@ -324,25 +386,18 @@
               width="26px"
               height="26px"
               src="/svg/instagram-black.svg"
-              alt="" />
+              alt=""
+            />
           </a>
         </li>
         <li>
           <a href="https://pin.it/6UwnjZkV3">
-            <img
-              width="26px"
-              height="26px"
-              src="/svg/pinterest.svg"
-              alt="" />
+            <img width="26px" height="26px" src="/svg/pinterest.svg" alt="" />
           </a>
         </li>
         <li>
           <a href="trixrewrd@gmail.com">
-            <img
-              width="26px"
-              height="26px"
-              src="/svg/email.svg"
-              alt="" />
+            <img width="26px" height="26px" src="/svg/email.svg" alt="" />
           </a>
         </li>
       </ul>

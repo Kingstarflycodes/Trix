@@ -2,7 +2,7 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" href="/img/Trix.png" />
+    <link rel="icon" href="/svg/logo.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
     <!-- Flowbite -->
@@ -31,7 +31,7 @@
       class="header-paddings relative bg-black text-white lg:rounded-lg flex items-center justify-between lg:gap-8 w-full"
     >
       <a href="/src/pages/home.html">
-        <img src="/svg/trix-logo.svg" width="99" height="30" alt="trix logo" />
+        <img src="/svg/logo-trix-white.svg" width="130" height="60" alt="trix logo" />
       </a>
 
       <nav class="hidden lg:flex items-center justify-between">
@@ -257,121 +257,59 @@
       </div>
       <!-- Mobile nav bar -->
     </header>
-    <section class="lg:pt-[6rem] pt-[2rem] ">
-      <div class="grid lg:w-[400px] justify-center mx-auto">
-        <span class="flex mx-10 lg:mt-20 gap-5">
-          <img width="70px" height="70px" src="/img/avatar-image-4.png" alt="">
-          <div class="lg:text-2xl">
-            <p>riderezzy@gmail.com</p>
-            <p>0.00 /350.00</p>
-          </div>
-        </span>
-      <h1 class="text-2xl pt-10 pb-5 pl-10 font-semibold text-left">Payment</h1>
-      <div class="h-[1px] w-full bg-gray-400"></div>
-      <h1 class="font-semibold pl-10 pt-5">Pay With:</h1>
-<div id="accordion-color" data-accordion="collapse" data-active-classes="text-black">
-    <div class="flex mx-10 flex-wrap ">
-        <h2 id="accordion-color-heading-1">
-            <button type="button" class="flex items-center justify-between w-full py-5 font-medium  gap-3" data-accordion-target="#accordion-color-body-1" aria-expanded="false" aria-controls="accordion-color-body-1">
-              <input type="radio">
-              <p>Card</p>
-            </button>
-          </h2>
-         
-          <h2 id="accordion-color-heading-2">
-            <button type="button" class="flex items-center justify-between w-full p-5 font-medium  gap-3" data-accordion-target="#accordion-color-body-2" aria-expanded="false" aria-controls="accordion-color-body-3">
-                <input type="radio">
-                <p>Bank</p>
-              </button>
-          </h2>
-          <h2 id="accordion-color-heading-3">
-            <button type="button" class="flex items-center justify-between w-full py-5 font-medium  gap-3" data-accordion-target="#accordion-color-body-3" aria-expanded="false" aria-controls="accordion-color-body-4">
-                <input type="radio">
-                <p>Transfer</p>
-              </button>
-          </h2>
-          <h2 id="accordion-color-heading-4">
-            <button type="button" class="flex items-center justify-between w-full lg:p-5 font-medium  gap-3" data-accordion-target="#accordion-color-body-4" aria-expanded="false" aria-controls="accordion-color-body-4">
-                <input type="radio">
-                <p>Trixbux</p>
-              </button>
-          </h2>
-    </div>
-    <div id="accordion-color-body-1" class="hidden" aria-labelledby="accordion-color-heading-1">
-      <div class=" px-10 ">
-        <input  class="border-gray-400 mt-3 w-full mb-5 rounded" type="text" placeholder="Choose your bank">
-        <div class="flex gap-5">
-          <span class="grid"><h1>Expiration Date <input placeholder="MM/YY" class="border-gray-400 mt-3 w-full rounded"  type="text"></h1></span>
-          <span class="grid"><h1>CVV <input placeholder="123" class="border-gray-400 mt-3 w-full rounded"  type="text"></h1></span>
+    <section class="pt-[6rem]">
+      <div class="grid w-[600px] justify-center mx-auto">
+        <div
+          class="grid w-[600px] justify-between items-center p-5 bg-paleGray"
+        >
+        <h1 class="bg-paleGray pl-3">Settings</h1>
         </div>
-        <span class="flex items-center my-5 gap-5">
-          <input type="checkbox" name="" id="">
-          <p class="text-gray-400">Save card details</p>
-        </span>
-        <h1 class="font-semibold">Refuel details</h1>
-        <input  class="border-gray-400 mt-3 w-full rounded" type="text" placeholder="Enter Amount">
-        <p class="text-gray-500 mt-2 text-right dark:text-gray-400">You will get 0 bux</p>
-        <span class="flex items-center my-5 gap-5">
-          <input type="checkbox" name="" id="">
-          <p class="text-gray-400">How to Refuel with Trixbux</p>
-        </span>
-      <button class="bg-black mt-5 py-3 w-full rounded text-white font-bold">Pay</button>
-      <p class="text-gray-500 pt-2">Your personal data will be used to process your order, support your experience throughout this website, and for other purposes described in our privacy policy</p>
-      </div>
-    </div>
-    <div id="accordion-color-body-2" class="hidden" aria-labelledby="accordion-color-heading-2">
-      <div class=" px-10 ">
-        <input  class="border-gray-400 mt-3 w-full mb-5 rounded" type="text" placeholder="Choose your bank">
-        <h1 class="font-semibold">Refuel details</h1>
-        <input  class="border-gray-400 mt-3 w-full rounded" type="text" placeholder="Enter Amount">
-        <p class="text-gray-500 mt-2 text-right dark:text-gray-400">You will get 0 bux</p>
-      <button class="bg-black mt-5 py-3 w-full rounded text-white font-bold">Pay</button>
-      <p class="text-gray-500 pt-2">Your personal data will be used to process your order, support your experience throughout this website, and for other purposes described in our privacy policy</p>
-      </div>
-    </div>
-    <div id="accordion-color-body-3" class="hidden" aria-labelledby="accordion-color-heading-3">
-        <div class="py-5 px-10">
-            <h1 class="font-semibold">Refuel details</h1>
-            <input  class="border-gray-400 mt-3 w-full rounded" type="text" placeholder="NGN 12,500.00">
-            <p class="text-gray-500 mt-2 text-right dark:text-gray-400">You will get 12,500 bux</p>
-            <div class="text-center w-3/6 mx-auto">
-                <p class="text-gray-500 pt-5">Transfer 12,500.00 to:</p>
-                <p>Createbux and logistics</p>
-                <span class="flex gap-3">
-                    <h1 class="font-semibold text-3xl py-3">0123456781</h1>
-                    <img src="/svg/Copy.svg" alt="">
-                </span>
-                <p>moni point micro finance back</p>
-                <p class="text-gray-500">Expires in <span class="text-red-600">10:00</span> minutes</p>
+        <div class="flex font-semibold gap-10 py-5 pl-5">
+            <img src="" alt="">
+            <h1>Shipping address</h1>
+        </div>
+        <div class="h-[1px] w-full bg-gray-400"></div>
+        <div class="flex justify-between py-5 pl-5">
+            <div class="grid justify-between ">
+                <h1>Country</h1>
+                <h1 class="text-gray-400 text-[.8rem]">Nigeria</h1>
             </div>
-          <button class="bg-black mt-5 py-3 w-full rounded text-white font-bold">Confirm Payment</button>
-          <p class="text-gray-500 pt-2">Your personal data will be used to process your order, support your experience throughout this website, and for other purposes described in our privacy policy</p>
+            <p class="pr-5">></p>
         </div>
-      </div>
-      <div id="accordion-color-body-4" class="hidden" aria-labelledby="accordion-color-heading-4">
-        <div class="py-5 px-10">
-          <h1 class="font-semibold">Refuel details</h1>
-          <input  class="border-gray-400 mt-3 w-full rounded" type="text" placeholder="enter your pin or voucher code">
-          <p class="text-gray-500 mt-2 text-right dark:text-gray-400">You will get 0 bux</p>
-          <span class="flex gap-3 pt-3">
-            <img src="/svg/Mark.svg" alt="">
-            <p class="text-gray-500">How to reload with trixbux</p>
-          </span>
-        <button class="bg-black mt-5 py-3 w-full rounded text-white font-bold">Pay</button>
-        <p class="text-gray-500 pt-2">Your personal data will be used to process your order, support your experience throughout this website, and for other purposes described in our privacy policy</p>
+        <div class="h-[1px] w-full bg-gray-400"></div>
+        <div class="flex justify-between py-5 pl-5">
+            <div class="grid justify-between ">
+                <h1>State</h1>
+                <h1 class="text-gray-400 text-[.8rem]">Delta state</h1>
+            </div>
+            <p class="pr-5">></p>
         </div>
+        <div class="h-[1px] w-full bg-gray-400"></div>
+        <div class="flex justify-between py-5 pl-5">
+            <div class="grid justify-between ">
+                <h1>City</h1>
+                <h1 class="text-gray-400 text-[.8rem]">Udu</h1>
+            </div>
+            <p class="pr-5">></p>
+        </div>
+        <div class="h-[1px] w-full bg-gray-400"></div>
+        <div class="grid justify-between py-5 pl-5 ">
+            <h1>Address</h1>
+            <h1 class="text-gray-400 text-[.8rem]">Panama avenue</h1>
+        </div>
+        <div class="h-[1px] w-full bg-gray-400"></div>
+        <div class="grid justify-between py-5 pl-5 ">
+            <h1>Poster code</h1>
+            <h1 class="text-gray-400 text-[.8rem]">30333</h1>
+        </div>
+        <div class="h-[1px] w-full bg-gray-400"></div>
+        <div class="py-5 text-gray-400 pl-5">
+            <p class="pb-5">Your Address is saved for the next time you use trix. it will be shared with merchants so they can complete your order.</p>
+            <a class="underline" href="">Add shipping address</a>
+        </div>
+        <button class="ml-auto">SAVE</button>
       </div>
-    </div>
-  </div>
-  
-        
-      </div>
-
-
-
     </section>
-    
-
     <footer class="text-center space-y-5 mx-auto py-8">
       <ul
         class="mx-auto flex justify-center items-center gap-6 [&_li]:cursor-pointer"
