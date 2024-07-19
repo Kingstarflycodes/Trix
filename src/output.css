@@ -758,6 +758,11 @@ video {
   margin-right: 2.5rem;
 }
 
+.mx-20{
+  margin-left: 5rem;
+  margin-right: 5rem;
+}
+
 .mx-5{
   margin-left: 1.25rem;
   margin-right: 1.25rem;
@@ -791,11 +796,6 @@ video {
 .my-8{
   margin-top: 2rem;
   margin-bottom: 2rem;
-}
-
-.mx-20{
-  margin-left: 5rem;
-  margin-right: 5rem;
 }
 
 .mb-10{
@@ -888,10 +888,6 @@ video {
 
 .mt-8{
   margin-top: 2rem;
-}
-
-.mr-1{
-  margin-right: 0.25rem;
 }
 
 .box-border{
@@ -1041,6 +1037,10 @@ video {
   height: 220px;
 }
 
+.h-\[240\]{
+  height: 240;
+}
+
 .h-\[2rem\]{
   height: 2rem;
 }
@@ -1059,6 +1059,10 @@ video {
 
 .h-\[489\]{
   height: 489;
+}
+
+.h-\[7px\]{
+  height: 7px;
 }
 
 .h-\[8vh\]{
@@ -1086,6 +1090,10 @@ video {
   max-height: 30vh;
 }
 
+.w-2\/5{
+  width: 40%;
+}
+
 .w-3{
   width: 0.75rem;
 }
@@ -1100,6 +1108,10 @@ video {
 
 .w-8{
   width: 2rem;
+}
+
+.w-\[10rem\]{
+  width: 10rem;
 }
 
 .w-\[130px\]{
@@ -1150,6 +1162,10 @@ video {
   width: 61px;
 }
 
+.w-\[700px\]{
+  width: 700px;
+}
+
 .w-\[80\%\]{
   width: 80%;
 }
@@ -1198,18 +1214,6 @@ video {
 
 .w-screen{
   width: 100vw;
-}
-
-.w-\[3\/6\]{
-  width: 3/6;
-}
-
-.w-\[\]{
-  width: ;
-}
-
-.w-\[651\.36px\]{
-  width: 651.36px;
 }
 
 .flex-shrink{
@@ -2372,6 +2376,16 @@ video {
   background-color: rgb(229 229 229 / var(--tw-bg-opacity));
 }
 
+.bg-Lpurple{
+  --tw-bg-opacity: 1;
+  background-color: rgb(138 43 226 / var(--tw-bg-opacity));
+}
+
+.bg-Mpurple{
+  --tw-bg-opacity: 1;
+  background-color: rgb(71 22 117 / var(--tw-bg-opacity));
+}
+
 .bg-\[\#252430\]{
   --tw-bg-opacity: 1;
   background-color: rgb(37 36 48 / var(--tw-bg-opacity));
@@ -2685,6 +2699,10 @@ video {
   padding-right: 2.5rem;
 }
 
+.pr-20{
+  padding-right: 5rem;
+}
+
 .pr-3{
   padding-right: 0.75rem;
 }
@@ -2699,6 +2717,10 @@ video {
 
 .pt-14{
   padding-top: 3.5rem;
+}
+
+.pt-16{
+  padding-top: 4rem;
 }
 
 .pt-2{
@@ -2727,22 +2749,6 @@ video {
 
 .pt-\[6rem\]{
   padding-top: 6rem;
-}
-
-.pl-1{
-  padding-left: 0.25rem;
-}
-
-.pl-16{
-  padding-left: 4rem;
-}
-
-.pr-16{
-  padding-right: 4rem;
-}
-
-.pr-20{
-  padding-right: 5rem;
 }
 
 .text-left{
@@ -2844,6 +2850,10 @@ video {
 
 .text-\[12px\]{
   font-size: 12px;
+}
+
+.text-\[3\.5rem\]{
+  font-size: 3.5rem;
 }
 
 .text-\[4rem\]{

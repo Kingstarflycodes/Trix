@@ -1,6 +1,7 @@
 // Coundown Timer
 let countDate = new Date('2024-11-27 00:00:00').getTime();
 
+
 let x = setInterval(() => {
   let daysHolder = document.querySelector('.days');
   let hoursHolder = document.querySelector('.hours');
