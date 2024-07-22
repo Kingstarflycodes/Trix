@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Familjen+Grotesk:ital,wght@0,400..700;1,400..700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Sedgwick+Ave&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Familjen+Grotesk:ital,wght@0,400..700;1,400..700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Sedgwick+Ave&display=swap');
 
 /*
 ! tailwindcss v3.4.3 | MIT License | https://tailwindcss.com
@@ -922,10 +922,6 @@ video {
   margin-top: 2rem;
 }
 
-.-ml-2{
-  margin-left: -0.5rem;
-}
-
 .box-border{
   box-sizing: border-box;
 }
@@ -1144,6 +1140,10 @@ video {
   width: 10rem;
 }
 
+.w-\[0\%\]{
+  width: 0%;
+}
+
 .w-\[130px\]{
   width: 130px;
 }
@@ -1170,6 +1170,10 @@ video {
 
 .w-\[3rem\]{
   width: 3rem;
+}
+
+.w-\[40\%\]{
+  width: 40%;
 }
 
 .w-\[42\%\]{
@@ -1824,10 +1828,6 @@ video {
   gap: 0.75rem;
 }
 
-.gap-32{
-  gap: 8rem;
-}
-
 .gap-4{
   gap: 1rem;
 }
@@ -2480,6 +2480,11 @@ video {
 .bg-purple{
   --tw-bg-opacity: 1;
   background-color: rgb(103 57 157 / var(--tw-bg-opacity));
+}
+
+.bg-sky-600{
+  --tw-bg-opacity: 1;
+  background-color: rgb(2 132 199 / var(--tw-bg-opacity));
 }
 
 .bg-transparent{
@@ -3505,12 +3510,12 @@ html {
 }
 
 body {
-  font-family: "Poppins", sans-serif;
+  font-family: 'Poppins', sans-serif;
 }
 
 .testimony {
   color: white;
-  background: black url("/svg/pattern-2.svg");
+  background: black url('/svg/pattern-2.svg');
   background-position: 100% 0;
   background-size: 80% 100%;
   background-repeat: no-repeat;
@@ -3524,7 +3529,7 @@ td {
 }
 
 .dropbtn1::after {
-  content: "";
+  content: '';
   position: absolute;
   bottom: 0px;
   display: none;
@@ -3547,7 +3552,7 @@ td {
 }
 
 .dropbtn2::after {
-  content: "";
+  content: '';
   position: absolute;
   bottom: 0px;
   display: none;
@@ -3570,7 +3575,7 @@ td {
 }
 
 .dropbtn3::after {
-  content: "";
+  content: '';
   position: absolute;
   bottom: 0px;
   display: none;
@@ -3616,7 +3621,7 @@ header:hover .dropbtn3:hover {
 /* Login Page Start */
 
 .login {
-  background-image: url("/img/login.png");
+  background-image: url('/img/login.png');
   background-repeat: no-repeat;
   background-size: cover;
   background-position: bottom right;
@@ -3627,7 +3632,7 @@ header:hover .dropbtn3:hover {
 /* Home Page Start */
 
 .earn-section {
-  background: black url("/svg/pattern-1.svg");
+  background: black url('/svg/pattern-1.svg');
   background-position: 160% 50%;
   background-size: 68% 100%;
   background-repeat: no-repeat;
@@ -3640,7 +3645,7 @@ header:hover .dropbtn3:hover {
 }
 
 .activities::before {
-  content: "";
+  content: '';
   position: absolute;
   bottom: -0.75rem;
   left: 50%;
@@ -3655,7 +3660,7 @@ header:hover .dropbtn3:hover {
 }
 
 .create-acct {
-  background-image: url("/img/create-acct.png");
+  background-image: url('/img/create-acct.png');
   background-repeat: no-repeat;
   background-size: cover;
   background-position: bottom right;
@@ -3663,6 +3668,13 @@ header:hover .dropbtn3:hover {
 
 dialog::backdrop {
   background: rgba(0, 0, 0, 0.71);
+}
+
+.modal::backdrop {
+  /* @apply bg-gray bg-opacity-95 filter blur-3xl ; */
+  /* background: rgba(134, 134, 134, 0.575); */
+  background-color: #ffffff2d;
+  filter: blur(100%) opacity(0.7);
 }
 
 .ParentDiv li::marker{
@@ -3736,129 +3748,129 @@ dialog::backdrop {
 }
 
 .sedgwick-ave {
-  font-family: "Sedgwick Ave", cursive;
+  font-family: 'Sedgwick Ave', cursive;
   font-style: normal;
 }
 
 .segoe-ui {
-  font-family: "Segoe UI", sans-serif;
+  font-family: 'Segoe UI', sans-serif;
 }
 
 h1,
 h2,
 h3 {
-  font-family: "Poppins", sans-serif;
+  font-family: 'Poppins', sans-serif;
 }
 
 .familjen-grotesk {
-  font-family: "Familjen Grotesk", sans-serif;
+  font-family: 'Familjen Grotesk', sans-serif;
   font-optical-sizing: auto;
 }
 
 .poppins-thin {
-  font-family: "Poppins", sans-serif;
+  font-family: 'Poppins', sans-serif;
   font-weight: 100;
   font-style: normal;
 }
 
 .poppins-extralight {
-  font-family: "Poppins", sans-serif;
+  font-family: 'Poppins', sans-serif;
   font-weight: 200;
   font-style: normal;
 }
 
 .poppins-light {
-  font-family: "Poppins", sans-serif;
+  font-family: 'Poppins', sans-serif;
   font-weight: 300;
   font-style: normal;
 }
 
 .poppins-regular {
-  font-family: "Poppins", sans-serif;
+  font-family: 'Poppins', sans-serif;
   font-weight: 400;
   font-style: normal;
 }
 
 .poppins-medium {
-  font-family: "Poppins", sans-serif;
+  font-family: 'Poppins', sans-serif;
   font-weight: 500;
   font-style: normal;
 }
 
 .poppins-semibold {
-  font-family: "Poppins", sans-serif;
+  font-family: 'Poppins', sans-serif;
   font-weight: 600;
   font-style: normal;
 }
 
 .poppins-bold {
-  font-family: "Poppins", sans-serif;
+  font-family: 'Poppins', sans-serif;
   font-weight: 700;
   font-style: normal;
 }
 
 .poppins-extrabold {
-  font-family: "Poppins", sans-serif;
+  font-family: 'Poppins', sans-serif;
   font-weight: 800;
   font-style: normal;
 }
 
 .poppins-black {
-  font-family: "Poppins", sans-serif;
+  font-family: 'Poppins', sans-serif;
   font-weight: 900;
   font-style: normal;
 }
 
 .poppins-thin-italic {
-  font-family: "Poppins", sans-serif;
+  font-family: 'Poppins', sans-serif;
   font-weight: 100;
   font-style: italic;
 }
 
 .poppins-extralight-italic {
-  font-family: "Poppins", sans-serif;
+  font-family: 'Poppins', sans-serif;
   font-weight: 200;
   font-style: italic;
 }
 
 .poppins-light-italic {
-  font-family: "Poppins", sans-serif;
+  font-family: 'Poppins', sans-serif;
   font-weight: 300;
   font-style: italic;
 }
 
 .poppins-regular-italic {
-  font-family: "Poppins", sans-serif;
+  font-family: 'Poppins', sans-serif;
   font-weight: 400;
   font-style: italic;
 }
 
 .poppins-medium-italic {
-  font-family: "Poppins", sans-serif;
+  font-family: 'Poppins', sans-serif;
   font-weight: 500;
   font-style: italic;
 }
 
 .poppins-semibold-italic {
-  font-family: "Poppins", sans-serif;
+  font-family: 'Poppins', sans-serif;
   font-weight: 600;
   font-style: italic;
 }
 
 .poppins-bold-italic {
-  font-family: "Poppins", sans-serif;
+  font-family: 'Poppins', sans-serif;
   font-weight: 700;
   font-style: italic;
 }
 
 .poppins-extrabold-italic {
-  font-family: "Poppins", sans-serif;
+  font-family: 'Poppins', sans-serif;
   font-weight: 800;
   font-style: italic;
 }
 
 .poppins-black-italic {
-  font-family: "Poppins", sans-serif;
+  font-family: 'Poppins', sans-serif;
   font-weight: 900;
   font-style: italic;
 }
@@ -4257,6 +4269,10 @@ h3 {
     padding-left: 1.25rem;
   }
 
+  .lg\:pr-8{
+    padding-right: 2rem;
+  }
+
   .lg\:pt-0{
     padding-top: 0px;
   }
@@ -4275,10 +4291,6 @@ h3 {
 
   .lg\:pt-\[6rem\]{
     padding-top: 6rem;
-  }
-
-  .lg\:pr-8{
-    padding-right: 2rem;
   }
 
   .lg\:text-left{
@@ -4343,19 +4355,6 @@ h3 {
       paint-order: markers;
     }
   }
-}
-
-.\[\&_button\]\:rounded-\[50\%\] button{
-  border-radius: 50%;
-}
-
-.\[\&_button\]\:bg-black button{
-  --tw-bg-opacity: 1;
-  background-color: rgb(0 0 0 / var(--tw-bg-opacity));
-}
-
-.\[\&_button\]\:p-20 button{
-  padding: 5rem;
 }
 
 .\[\&_button\]\:text-white button{
