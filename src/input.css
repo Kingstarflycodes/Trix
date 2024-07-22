@@ -111,10 +111,11 @@ dialog::backdrop {
 }
 
 .modal::backdrop {
-  /* @apply bg-gray bg-opacity-95 filter blur-3xl ; */
-  /* background: rgba(134, 134, 134, 0.575); */
-  background-color: #ffffff2d;
-  filter: blur(100%) opacity(0.7);
+  background: rgba(255, 255, 255, 0.29);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(4.5px);
+  -webkit-backdrop-filter: blur(4.5px);
 }
 
 .ParentDiv li::marker {
