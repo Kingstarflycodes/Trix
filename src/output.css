@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Familjen+Grotesk:ital,wght@0,400..700;1,400..700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Sedgwick+Ave&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Familjen+Grotesk:ital,wght@0,400..700;1,400..700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Sedgwick+Ave&display=swap');
 
 /*
 ! tailwindcss v3.4.3 | MIT License | https://tailwindcss.com
@@ -818,6 +818,16 @@ video {
   margin-bottom: 2rem;
 }
 
+.mx-8{
+  margin-left: 2rem;
+  margin-right: 2rem;
+}
+
+.mx-6{
+  margin-left: 1.5rem;
+  margin-right: 1.5rem;
+}
+
 .-mt-14{
   margin-top: -3.5rem;
 }
@@ -920,6 +930,10 @@ video {
 
 .mt-8{
   margin-top: 2rem;
+}
+
+.-ml-6{
+  margin-left: -1.5rem;
 }
 
 .box-border{
@@ -1200,10 +1214,6 @@ video {
   width: 3rem;
 }
 
-.w-\[40px\]{
-  width: 40px;
-}
-
 .w-\[42\%\]{
   width: 42%;
 }
@@ -1290,8 +1300,40 @@ video {
   width: 400;
 }
 
+.w-\[\]{
+  width: ;
+}
+
+.w-\[313\]{
+  width: 313;
+}
+
+.w-\[313px\]{
+  width: 313px;
+}
+
 .w-\[300\]{
   width: 300;
+}
+
+.w-\[10\]{
+  width: 10;
+}
+
+.w-\[10\%\]{
+  width: 10%;
+}
+
+.w-\[30\%\]{
+  width: 30%;
+}
+
+.w-\[70\]{
+  width: 70;
+}
+
+.w-\[70\%\]{
+  width: 70%;
 }
 
 .max-w-\[100vw\]{
@@ -2346,6 +2388,10 @@ video {
   border-width: 8px;
 }
 
+.border-0{
+  border-width: 0px;
+}
+
 .border-x{
   border-left-width: 1px;
   border-right-width: 1px;
@@ -2532,6 +2578,16 @@ video {
   background-color: rgb(103 57 157 / var(--tw-bg-opacity));
 }
 
+.bg-purplebg{
+  --tw-bg-opacity: 1;
+  background-color: rgb(138 43 226 / var(--tw-bg-opacity));
+}
+
+.bg-sky-600{
+  --tw-bg-opacity: 1;
+  background-color: rgb(2 132 199 / var(--tw-bg-opacity));
+}
+
 .bg-transparent{
   background-color: transparent;
 }
@@ -2546,8 +2602,9 @@ video {
   background-color: rgb(241 216 12 / var(--tw-bg-opacity));
 }
 
-.bg-none{
-  background-image: none;
+.bg-red-600{
+  --tw-bg-opacity: 1;
+  background-color: rgb(220 38 38 / var(--tw-bg-opacity));
 }
 
 .decoration-slice{
@@ -3617,12 +3674,12 @@ html {
 }
 
 body {
-  font-family: "Poppins", sans-serif;
+  font-family: 'Poppins', sans-serif;
 }
 
 .testimony {
   color: white;
-  background: black url("/svg/pattern-2.svg");
+  background: black url('/svg/pattern-2.svg');
   background-position: 100% 0;
   background-size: 80% 100%;
   background-repeat: no-repeat;
@@ -3636,7 +3693,7 @@ td {
 }
 
 .dropbtn1::after {
-  content: "";
+  content: '';
   position: absolute;
   bottom: 0px;
   display: none;
@@ -3659,7 +3716,7 @@ td {
 }
 
 .dropbtn2::after {
-  content: "";
+  content: '';
   position: absolute;
   bottom: 0px;
   display: none;
@@ -3682,7 +3739,7 @@ td {
 }
 
 .dropbtn3::after {
-  content: "";
+  content: '';
   position: absolute;
   bottom: 0px;
   display: none;
@@ -3728,7 +3785,7 @@ header:hover .dropbtn3:hover {
 /* Login Page Start */
 
 .login {
-  background-image: url("/img/login.png");
+  background-image: url('/img/login.png');
   background-repeat: no-repeat;
   background-size: cover;
   background-position: bottom right;
@@ -3739,7 +3796,7 @@ header:hover .dropbtn3:hover {
 /* Home Page Start */
 
 .earn-section {
-  background: black url("/svg/pattern-1.svg");
+  background: black url('/svg/pattern-1.svg');
   background-position: 160% 50%;
   background-size: 68% 100%;
   background-repeat: no-repeat;
@@ -3752,7 +3809,7 @@ header:hover .dropbtn3:hover {
 }
 
 .activities::before {
-  content: "";
+  content: '';
   position: absolute;
   bottom: -0.75rem;
   left: 50%;
@@ -3767,7 +3824,7 @@ header:hover .dropbtn3:hover {
 }
 
 .create-acct {
-  background-image: url("/img/create-acct.png");
+  background-image: url('/img/create-acct.png');
   background-repeat: no-repeat;
   background-size: cover;
   background-position: bottom right;
@@ -3775,6 +3832,14 @@ header:hover .dropbtn3:hover {
 
 dialog::backdrop {
   background: rgba(0, 0, 0, 0.71);
+}
+
+.modal::backdrop {
+  background: rgba(255, 255, 255, 0.29);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(4.5px);
+  -webkit-backdrop-filter: blur(4.5px);
 }
 
 .ParentDiv li::marker{
@@ -3848,129 +3913,129 @@ dialog::backdrop {
 }
 
 .sedgwick-ave {
-  font-family: "Sedgwick Ave", cursive;
+  font-family: 'Sedgwick Ave', cursive;
   font-style: normal;
 }
 
 .segoe-ui {
-  font-family: "Segoe UI", sans-serif;
+  font-family: 'Segoe UI', sans-serif;
 }
 
 h1,
 h2,
 h3 {
-  font-family: "Poppins", sans-serif;
+  font-family: 'Poppins', sans-serif;
 }
 
 .familjen-grotesk {
-  font-family: "Familjen Grotesk", sans-serif;
+  font-family: 'Familjen Grotesk', sans-serif;
   font-optical-sizing: auto;
 }
 
 .poppins-thin {
-  font-family: "Poppins", sans-serif;
+  font-family: 'Poppins', sans-serif;
   font-weight: 100;
   font-style: normal;
 }
 
 .poppins-extralight {
-  font-family: "Poppins", sans-serif;
+  font-family: 'Poppins', sans-serif;
   font-weight: 200;
   font-style: normal;
 }
 
 .poppins-light {
-  font-family: "Poppins", sans-serif;
+  font-family: 'Poppins', sans-serif;
   font-weight: 300;
   font-style: normal;
 }
 
 .poppins-regular {
-  font-family: "Poppins", sans-serif;
+  font-family: 'Poppins', sans-serif;
   font-weight: 400;
   font-style: normal;
 }
 
 .poppins-medium {
-  font-family: "Poppins", sans-serif;
+  font-family: 'Poppins', sans-serif;
   font-weight: 500;
   font-style: normal;
 }
 
 .poppins-semibold {
-  font-family: "Poppins", sans-serif;
+  font-family: 'Poppins', sans-serif;
   font-weight: 600;
   font-style: normal;
 }
 
 .poppins-bold {
-  font-family: "Poppins", sans-serif;
+  font-family: 'Poppins', sans-serif;
   font-weight: 700;
   font-style: normal;
 }
 
 .poppins-extrabold {
-  font-family: "Poppins", sans-serif;
+  font-family: 'Poppins', sans-serif;
   font-weight: 800;
   font-style: normal;
 }
 
 .poppins-black {
-  font-family: "Poppins", sans-serif;
+  font-family: 'Poppins', sans-serif;
   font-weight: 900;
   font-style: normal;
 }
 
 .poppins-thin-italic {
-  font-family: "Poppins", sans-serif;
+  font-family: 'Poppins', sans-serif;
   font-weight: 100;
   font-style: italic;
 }
 
 .poppins-extralight-italic {
-  font-family: "Poppins", sans-serif;
+  font-family: 'Poppins', sans-serif;
   font-weight: 200;
   font-style: italic;
 }
 
 .poppins-light-italic {
-  font-family: "Poppins", sans-serif;
+  font-family: 'Poppins', sans-serif;
   font-weight: 300;
   font-style: italic;
 }
 
 .poppins-regular-italic {
-  font-family: "Poppins", sans-serif;
+  font-family: 'Poppins', sans-serif;
   font-weight: 400;
   font-style: italic;
 }
 
 .poppins-medium-italic {
-  font-family: "Poppins", sans-serif;
+  font-family: 'Poppins', sans-serif;
   font-weight: 500;
   font-style: italic;
 }
 
 .poppins-semibold-italic {
-  font-family: "Poppins", sans-serif;
+  font-family: 'Poppins', sans-serif;
   font-weight: 600;
   font-style: italic;
 }
 
 .poppins-bold-italic {
-  font-family: "Poppins", sans-serif;
+  font-family: 'Poppins', sans-serif;
   font-weight: 700;
   font-style: italic;
 }
 
 .poppins-extrabold-italic {
-  font-family: "Poppins", sans-serif;
+  font-family: 'Poppins', sans-serif;
   font-weight: 800;
   font-style: italic;
 }
 
 .poppins-black-italic {
-  font-family: "Poppins", sans-serif;
+  font-family: 'Poppins', sans-serif;
   font-weight: 900;
   font-style: italic;
 }
@@ -4033,6 +4098,16 @@ h3 {
   text-align: center;
 }
 
+.focus\:border-blue-500:focus{
+  --tw-border-opacity: 1;
+  border-color: rgb(59 130 246 / var(--tw-border-opacity));
+}
+
+.focus\:ring-blue-500:focus{
+  --tw-ring-opacity: 1;
+  --tw-ring-color: rgb(59 130 246 / var(--tw-ring-opacity));
+}
+
 .focus\:hover\:text-center:hover:focus{
   text-align: center;
 }
@@ -4042,14 +4117,30 @@ h3 {
 }
 
 @media not all and (min-width: 768px){
+  .max-md\:border-0{
+    border-width: 0px;
+  }
+
   .max-md\:text-center{
     text-align: center;
+  }
+
+  .max-md\:outline-0{
+    outline-width: 0px;
   }
 }
 
 @media not all and (min-width: 640px){
+  .max-sm\:border-0{
+    border-width: 0px;
+  }
+
   .max-sm\:text-\[3\.2rem\]{
     font-size: 3.2rem;
+  }
+
+  .max-sm\:outline-0{
+    outline-width: 0px;
   }
 }
 
@@ -4060,12 +4151,34 @@ h3 {
 }
 
 @media (min-width: 768px){
+  .md\:absolute{
+    position: absolute;
+  }
+
   .md\:mt-32{
     margin-top: 8rem;
   }
 
+  .md\:flex{
+    display: flex;
+  }
+
+  .md\:w-\[85\%\]{
+    width: 85%;
+  }
+
   .md\:grid-cols-2{
     grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .md\:flex-row{
+    flex-direction: row;
+  }
+
+  .md\:space-y-0 > :not([hidden]) ~ :not([hidden]){
+    --tw-space-y-reverse: 0;
+    margin-top: calc(0px * calc(1 - var(--tw-space-y-reverse)));
+    margin-bottom: calc(0px * var(--tw-space-y-reverse));
   }
 
   .md\:px-10{
@@ -4075,6 +4188,10 @@ h3 {
 
   .md\:pt-14{
     padding-top: 3.5rem;
+  }
+
+  .md\:text-left{
+    text-align: left;
   }
 
   .md\:text-3xl{
@@ -4088,6 +4205,11 @@ h3 {
 
   .md\:text-\[5\.5rem\]{
     font-size: 5.5rem;
+  }
+
+  .md\:text-4xl{
+    font-size: 2.25rem;
+    line-height: 2.5rem;
   }
 }
 
@@ -4132,6 +4254,10 @@ h3 {
 
   .lg\:mt-24{
     margin-top: 6rem;
+  }
+
+  .lg\:-mt-14{
+    margin-top: -3.5rem;
   }
 
   .lg\:block{
@@ -4184,6 +4310,10 @@ h3 {
 
   .lg\:max-h-screen{
     max-height: 100vh;
+  }
+
+  .lg\:max-h-\[150vh\]{
+    max-height: 150vh;
   }
 
   .lg\:w-1\/2{
@@ -4310,35 +4440,6 @@ h3 {
     width: 87%;
   }
 
-  .lg\:w-2\/5{
-    width: 40%;
-  }
-
-  .lg\:w-5\/12{
-    width: 41.666667%;
-  }
-
-  .lg\:w-\[\]{
-    width: ;
-  }
-
-  .lg\:w-\[800px\]{
-    width: 800px;
-  }
-
-  .lg\:w-\[1rem\]{
-    width: 1rem;
-  }
-
-  .lg\:w-\[1\.2rem\]{
-    width: 1.2rem;
-  }
-
-  .lg\:w-max{
-    width: -moz-max-content;
-    width: max-content;
-  }
-
   .lg\:min-w-\[20\%\]{
     min-width: 20%;
   }
@@ -4393,6 +4494,12 @@ h3 {
     margin-bottom: calc(0px * var(--tw-space-y-reverse));
   }
 
+  .lg\:space-y-10 > :not([hidden]) ~ :not([hidden]){
+    --tw-space-y-reverse: 0;
+    margin-top: calc(2.5rem * calc(1 - var(--tw-space-y-reverse)));
+    margin-bottom: calc(2.5rem * var(--tw-space-y-reverse));
+  }
+
   .lg\:overflow-y-hidden{
     overflow-y: hidden;
   }
@@ -4421,6 +4528,10 @@ h3 {
 
   .lg\:p-5{
     padding: 1.25rem;
+  }
+
+  .lg\:p-10{
+    padding: 2.5rem;
   }
 
   .lg\:px-0{
@@ -4459,6 +4570,10 @@ h3 {
 
   .lg\:pl-5{
     padding-left: 1.25rem;
+  }
+
+  .lg\:pr-8{
+    padding-right: 2rem;
   }
 
   .lg\:pt-0{
@@ -4567,19 +4682,6 @@ h3 {
       paint-order: markers;
     }
   }
-}
-
-.\[\&_button\]\:rounded-\[50\%\] button{
-  border-radius: 50%;
-}
-
-.\[\&_button\]\:bg-black button{
-  --tw-bg-opacity: 1;
-  background-color: rgb(0 0 0 / var(--tw-bg-opacity));
-}
-
-.\[\&_button\]\:p-20 button{
-  padding: 5rem;
 }
 
 .\[\&_button\]\:text-white button{
