@@ -143,19 +143,22 @@
       </p>
 
       <div
-        class="bg-[#00000080] relative w-full overflow-hidden space-y-6 md:space-y-0 md:w-[85%] mx-auto rounded-lg text-white py-3 md:flex">
-        <button class="copyBtn mx-6"><img src="/waitlist-assets/copy.svg" alt="copy icon"></button>
+        class="bg-[#00000080] relative w-full overflow-hidden space-y-6 md:space-y-0 md:w-[85%] mx-auto rounded-lg text-white py-3">
+        <div class="flex items-center gap-6">
+          <button class="copyBtn mx-6"><img src="/waitlist-assets/copy-icon.svg" width="33" alt="copy icon"></button>
+          <!-- outline-0 border-0 -->
         <input
-          class="user-code bg-transparent max-sm:outline-0 max-sm:border-0 -ml-6 lg:-ml-o text-center md:text-left"
-          value="TEXJD#12345"
-          readonly="readonly"
-          type="text" />
+        class="user-code bg-transparent p-0 w-fit text-center md:text-left"
+        value="TEXJD#12345"
+        readonly="readonly"
+        type="text" />
+        </div>
         <button
           class="md:absolute top-0 right-0 bottom-0 font-semibold bg-white px-8 py-3 h-full rounded-lg text-purple">
           Share Code
         </button>
       </div>
-      <button class="modalClose mt-10 rounded-md claim">Go to Dashboard</button>
+      <button class="modalClose mt-10 rounded-md claim">Go to Dashboard <span><img class="inline-block ms-2" width="25" src="/waitlist-assets/arrow-white.svg" alt="arrow icon"></span></button>
     </dialog>
 
     <script>
