@@ -6,6 +6,7 @@ module.exports = {
     extend: {
       colors: {
         purple: '#67399D',
+        purplebg: '#8A2BE2',
         yellow: '#F1D80C',
         peach: '#F66364',
         pale: '#F6F8F3',
@@ -14,7 +15,7 @@ module.exports = {
         purple: '#67399D',
         gold: '#F8E231',
         silver: '#C7C5B8',
-        bronze: "#A87900",
+        bronze: '#A87900',
         gray: '#555555',
         mgray: '#D6D1D5',
         lgray: '#F8F7F8',
@@ -24,9 +25,13 @@ module.exports = {
         lorange: '#FEEBC8',
         Hgrey: '#E5E5E5',
         Dpurple: '#0A0612',
+<<<<<<< HEAD
         Lpurple: '#8A2BE2',
         Mpurple: '#471675'
       }
+=======
+      },
+>>>>>>> 4cbae5a41ed609b9ebfc5cd244835b84bc6b7456
     },
   },
   plugins: [],
