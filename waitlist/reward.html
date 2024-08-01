@@ -1,0 +1,85 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <link rel="icon" href="/img/Trix.png" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Flowbite -->
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.css"
+      rel="stylesheet"
+    />
+    <script
+      defer
+      src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.js"
+    ></script>
+    <!-- Flowbite -->
+    <link rel="stylesheet" href="/src/output.css" />
+    <script async src="/src/pages/script.js"></script>
+    <script defer src="/src/pages/global.js"></script>
+    <title>Trix - Wishlist</title>
+  </head>
+<body class="bg-Lpurple">
+    <header class="header-paddings text-white flex items-center justify-between">
+        <img class="w-[10rem]" src="/svg/wlogo.svg" alt="trix logo" />
+        <nav class="hidden lg:inline-block">
+          <ul class="flex items-center text-xl gap-6 mr-6">
+            <li>About</li>
+            <li>Tasks</li>
+            <li class="mr-10">Surveys</li>
+            <li>
+                <a href="/src/pages/sign-up.html">
+                    <img class="w-[3rem]" src="/svg/bar.svg" alt="">
+                  </a>
+            </li>
+          </ul>
+        </nav>
+        <!-- Mobile nav bar -->
+        <div class="lg:hidden z-10">
+          <button class="openBtn size-10">
+            <img src="/svg/icon-hamburger-dark.svg" alt="icon hamburger" />
+          </button>
+          <button class="closeBtn hidden relative z-30 size-10">
+            <img src="/svg/icon-close-dark.svg" alt="icon close" />
+          </button>
+  
+          <ul
+            class="menu hidden flex-col z-20 text-center items-center justify-center gap-6 absolute h-screen top-0 left-0 right-0 bg-[#ffffffc0] text-black [&_li]:text-xl">
+            <li><a href="/src/pages/home.html">About</a></li>
+            <li>Tasks</li>
+            <li>Surveys</li>
+            <li>
+              <a href="/src/pages/sign-up.html">
+                <img src="/svg/bar.svg" alt="">
+              </a>
+            </li>
+          </ul>
+        </div>
+        <!-- Mobile nav bar -->
+      </header>
+        <section class="lg:pt-16 mt-10 pt-10 pb-10 mx-10 lg:mx-auto bg-none lg:bg-purple lg:w-max lg:grid  rounded-xl text-white text-center">
+          <h1 class="lg:text-[2.5rem] text-[1.3rem] lg:w-[700px]  mx-auto font-semibold">You have been successfully added to the Trixrewrd waitlist</h1>
+          <p class="lg:text-[1rem] lg:w-[700px] mx-auto lg:px-10 px-5  pt-2 text-[.5rem]">Use the code below to refer friends and increase your chances of earning more TRIX Points</p>
+        
+          <div class="flex lg:mt-16 mt-10 lg:w-[600px] full rounded items-center mx-auto bg-Mpurple justify-between">
+            <span class="flex pl-5 lg:gap-5 gap-3 items-center">
+                <img class="lg:w-[2rem] w-[1rem] " src="/waitlist-assets/solar_copy-bold-duotone(1).svg" alt="">
+                <p class="lg:text-1rem text-[.8rem]">TRIXJD#12345</p>
+            </span>
+            <h1 class="bg-white lg:text-1rem text-[.8rem] rounded-tr rounded-br text-Mpurple p-2 lg:p-5 text">Share Code</h1>
+          </div>
+          <div class="flex justify-center pt-10 gap-3 items-center">
+            <p class=" text-mgray lg:text-[1rem] text-[.7rem]">Go to Daashboard</p>
+            <img class="lg:w-[1.2rem] w-[1rem]" src="/waitlist-assets/arrow-narrow-right.svg" alt="">
+          </div>
+          </section>
+          <div class=" flex justify-between pt-52 px-5">
+            <p class="text-white text-[.5rem] pt-10">&2024 Trix. All rights reserved</p>
+            <div class="lg:hidden text-right lg:gap-3 gap-1 flex pt-10">
+              <img class="lg:w-[40px] w-[15px]" src="/svg/wfacebook.svg" alt="">
+              <img class="lg:w-[40px] w-[15px]" src="/svg/wx.svg" alt="">
+              <img class="lg:w-[40px] w-[15px]" src="/svg/winstagram.svg" alt="">
+              <img class="lg:w-[40px] w-[15px]" src="/svg/wmusic.svg" alt="">
+            </div>
+          </div>
+</body>
+</html>

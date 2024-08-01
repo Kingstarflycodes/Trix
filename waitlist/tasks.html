@@ -1,0 +1,114 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <link rel="icon" href="/img/Trix.png" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Flowbite -->
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.css"
+      rel="stylesheet"
+    />
+    <script
+      defer
+      src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.js"
+    ></script>
+    <!-- Flowbite -->
+    <link rel="stylesheet" href="/src/output.css" />
+    <script async src="/src/pages/script.js"></script>
+    <script defer src="/src/pages/global.js"></script>
+    <title>Trix - Wishlist</title>
+  </head>
+<body class="bg-Lpurple">
+    <header class="header-paddings text-white flex items-center justify-between">
+        <img class="w-[10rem]" src="/svg/wlogo.svg" alt="trix logo" />
+        <nav class="hidden lg:inline-block">
+          <ul class="flex items-center text-xl gap-6 mr-6">
+            <li>About</li>
+            <li>Tasks</li>
+            <li class="mr-10">Surveys</li>
+            <li>
+                <a href="/src/pages/sign-up.html">
+                    <img class="w-[3rem]" src="/svg/bar.svg" alt="">
+                  </a>
+            </li>
+          </ul>
+        </nav>
+        <!-- Mobile nav bar -->
+        <div class="lg:hidden z-10">
+          <button class="openBtn size-10">
+            <img src="/svg/icon-hamburger-dark.svg" alt="icon hamburger" />
+          </button>
+          <button class="closeBtn hidden relative z-30 size-10">
+            <img src="/svg/icon-close-dark.svg" alt="icon close" />
+          </button>
+  
+          <ul
+            class="menu hidden flex-col z-20 text-center items-center justify-center gap-6 absolute h-screen top-0 left-0 right-0 bg-[#ffffffc0] text-black [&_li]:text-xl">
+            <li><a href="/src/pages/home.html">About</a></li>
+            <li>Tasks</li>
+            <li>Surveys</li>
+            <li>
+              <a href="/src/pages/sign-up.html">
+                <img src="/svg/bar.svg" alt="">
+              </a>
+            </li>
+          </ul>
+        </div>
+        <!-- Mobile nav bar -->
+      </header>
+      <div class="flex items-end lg:px-20">
+        <div class="grid">
+          <img class="w-[300px] hidden " src="/svg/wleft.svg" alt="">
+          <p class="text-white hidden pt-10">&2024 Trix. All rights reserved</p>
+        </div>
+        <section class="mt-10 text-white text-center">
+          <h1 class="lg:text-[3.5rem] text-[1.7rem] px-10 lg:w-8/12 mx-auto font-semibold">Complete Challenges and Earn More Points</h1>
+          <p class="lg:text-[1rem] text-[.4rem]">Boost your chances of receiving your your desired reward by completing various tasks.</p>
+        
+          <div class="lg:pt-16 pt-10 flex justify-center lg:[text-1rem] text-[.7rem] gap-3 pb-3">
+              <button  class="lg:px-10 px-3 py-2 lg:py-5 rounded cursor-pointer border-b-2 border-white ">One-Time Tasks</button>
+              <button  class="lg:px-10 px-3 py-2 lg:py-5 rounded cursor-pointer border-b-2 border-white bg-purple">Daily Tasks</button>
+              <button  class="lg:px-10 px-3 py-2 lg:py-5 rounded cursor-pointer border-b-2 border-white ">Competed Tasks</button>
+              
+          </div>
+          <div id="More" class="lg:w-[700px] w-[350] lg:h-[240] rounded-xl p-5 mx-auto bg-purple scroll overflow-y-scroll text-left">
+              <div class="grid">
+                  <h1 class="lg:text-[1rem] text-[.7rem]">Share on Social Media</h1>
+                  <div class="flex justify-between items-center lg:pt-3 ">
+                      <p class="lg:text-[.8rem] text-[.3rem]">Share post on your socials and earn <span class="font-semibold">10 points,</span> getting you closer to your desired reward.</p>
+                      <h1 class="lg:text-[1rem]  text-[.6rem]">1<span></span>/1</h1>
+                  </div>
+                  <div class="h-[7px] w-full bg-Mpurple rounded-full"></div>
+              </div>
+              <div class="grid pt-5">
+                  <h1 class="lg:text-[1rem] text-[.7rem]">Invite 5 New Friends</h1>
+                  <div class="flex justify-between lg:pt-3">
+                      <p class="lg:text-[.8rem] text-[.3rem]">invite 5 New Friends to join trix and earn <span class="font-semibold">50 points,</span> getting you closer to your desired reward.</p>
+                      <h1 class="lg:text-[1rem]  text-[.6rem]"><span>1</span>/5</h1>
+                  </div>
+                  <div class="h-[7px] w-full bg-Mpurple rounded-full"></div>
+              </div>
+              <h1 class="font-bold pt-5">Complete 5 Surveys</h1>
+          </div>
+          </section>
+        <div>
+          <img class="w-[300px] hidden" src="/svg/wright.svg" alt="">
+          <div class="lg:flex gap-3 hidden pt-10">
+            <img class="w-[40px]" src="/svg/wfacebook.svg" alt="">
+            <img class="w-[40px]" src="/svg/wx.svg" alt="">
+            <img class="w-[40px]" src="/svg/winstagram.svg" alt="">
+            <img class="w-[40px]" src="/svg/wmusic.svg" alt="">
+          </div>
+        </div>
+      </div>
+      <div class=" flex justify-between pt-40 px-5">
+        <p class="text-white text-[.5rem] pt-10">&2024 Trix. All rights reserved</p>
+        <div class="lg:hidden text-right lg:gap-3 gap-1 flex pt-10">
+          <img class="lg:w-[40px] w-[15px]" src="/svg/wfacebook.svg" alt="">
+          <img class="lg:w-[40px] w-[15px]" src="/svg/wx.svg" alt="">
+          <img class="lg:w-[40px] w-[15px]" src="/svg/winstagram.svg" alt="">
+          <img class="lg:w-[40px] w-[15px]" src="/svg/wmusic.svg" alt="">
+        </div>
+      </div>
+</body>
+</html>

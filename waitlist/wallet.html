@@ -1,0 +1,114 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <link rel="icon" href="/img/Trix.png" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Flowbite -->
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.css"
+      rel="stylesheet"
+    />
+    <script
+      defer
+      src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.js"
+    ></script>
+    <!-- Flowbite -->
+    <link rel="stylesheet" href="/src/output.css" />
+    <script async src="/src/pages/script.js"></script>
+    <script defer src="/src/pages/global.js"></script>
+    <title>Trix - Wishlist</title>
+  </head>
+<body class="bg-Lpurple">
+    <header class="header-paddings text-white flex items-center justify-between">
+        <img class="w-[10rem]" src="/svg/wlogo.svg" alt="trix logo" />
+        <nav class="hidden lg:inline-block">
+          <ul class="flex items-center text-xl gap-6 mr-6">
+            <li>About</li>
+            <li>Tasks</li>
+            <li class="mr-10">Surveys</li>
+            <li>
+                <!-- <a href="/src/pages/sign-up.html">
+                    <img class="w-[3rem]" src="/svg/bar.svg" alt="">
+                  </a> -->
+                  <button id="dropdownBottomButton" data-dropdown-toggle="dropdownBottom" data-dropdown-placement="bottom" class=" text-center inline-flex items-center" type="button">
+                    <!-- <a href=""> -->
+                        <img class="w-[3rem]" src="/svg/bar.svg" alt="">
+                      <!-- </a> -->
+                </button>
+                    
+                    <!-- Dropdown menu -->
+                    <div id="dropdownBottom" class="z-10 text-center hidden bg-Mpurple pt-5 rounded-lg shadow w-[300px] px-5">
+                        <h1 class="text-xl font-bold">Current Rankings</h1>
+                        <p>3 Days to go</p>
+                        <div class="flex justify-between items-center">
+                            <span class="flex gap-3 items-center">
+                                <img class="w-[2rem]" src="/img/avatar-image-1.png" alt="">
+                                <p><span>#1</span> John Doe</p>
+                            </span>
+                            <span>
+                                <h1>200pts</h1>
+                                <img src="" alt="">
+                            </span>
+                        </div>
+                    </div>
+            </li>
+          </ul>
+        </nav>
+        <!-- Mobile nav bar -->
+        <div class="lg:hidden z-10">
+          <button class="openBtn size-10">
+            <img src="/svg/icon-hamburger-dark.svg" alt="icon hamburger" />
+          </button>
+          <button class="closeBtn hidden relative z-30 size-10">
+            <img src="/svg/icon-close-dark.svg" alt="icon close" />
+          </button>
+  
+          <ul
+            class="menu hidden flex-col z-20 text-center items-center justify-center gap-6 absolute h-screen top-0 left-0 right-0 bg-[#ffffffc0] text-black [&_li]:text-xl">
+            <li><a href="/src/pages/home.html">About</a></li>
+            <li>Tasks</li>
+            <li>Surveys</li>
+            <li>
+              <a href="/src/pages/sign-up.html">
+                <img src="/svg/bar.svg" alt="">
+              </a>
+            </li>
+          </ul>
+        </div>
+        <!-- Mobile nav bar -->
+      </header>
+      <div class="flex items-center lg:px-20">
+        <div class="grid">
+          <img class="lg:w-[300px] w-[150px] " src="/svg/wleft.svg" alt="">
+          <p class="text-white lg:flex hidden pt-10">&2024 Trix. All rights reserved</p>
+        </div>
+        <section class="lg:pt-16 pt-10  text-white text-center">
+          <h1 class="lg:text-[3.5rem] text-[1.7rem] lg:w-8/12 mx-auto font-semibold">Welcome John Doe! You're a Proud Trixter.</h1>
+          <p class="lg:text-[1rem] text-[.5rem]">Thank You for Joining the TrixReward Waitlist</p>
+        
+          <div class="lg:pt-16 pt-10 text-xl flex justify-center items-center gap-3 pb-3">
+            <img class="lg:w-[3.4rem] w-[2.4rem]" src="/svg/wicon.svg" alt="">
+            <h1>You Rank: #123</h1>
+            <img class="lg:w-[2rem] w-[1.5rem]" src="/svg/Polygon.svg" alt="">
+          </div>
+          <div class="flex lg:mt-16 mt-10 lg:w-[600px] full rounded items-center mx-auto bg-Mpurple justify-between">
+            <span class="flex pl-5 lg:gap-5 gap-3 items-center">
+                <img class="lg:w-[2rem] w-[1rem] " src="/svg/ion_wallet.svg" alt="">
+                <p class="lg:text-1rem text-[.8rem]">Enter Wallet ID</p>
+            </span>
+            <h1 class="bg-white lg:text-1rem text-[.8rem] rounded-tr rounded-br text-Mpurple p-2 lg:p-5 text">Connect Wallet</h1>
+          </div>
+          <p class="lg:w-[600px] text-mgray lg:text-[1rem] text-[.4rem] mx-auto pt-10">Increase your chances of getting your desired coin by completing tasks and sharing your unique referral link. The more tasks you complete and the more friends you refer, the higher your chances!</p>
+          </section>
+        <div>
+          <img class="lg:w-[300px] w-[150px]" src="/svg/wright.svg" alt="">
+          <div class="lg:flex hidden gap-3 justify-end pt-10">
+            <img class="w-[40px]" src="/svg/wfacebook.svg" alt="">
+            <img class="w-[40px]" src="/svg/wx.svg" alt="">
+            <img class="w-[40px]" src="/svg/winstagram.svg" alt="">
+            <img class="w-[40px]" src="/svg/music.svg" alt="">
+          </div>
+        </div>
+      </div>
+</body>
+</html>
