@@ -25,15 +25,10 @@ module.exports = {
         lorange: '#FEEBC8',
         Hgrey: '#E5E5E5',
         Dpurple: '#0A0612',
-<<<<<<< HEAD
         Lpurple: '#8A2BE2',
-        Mpurple: '#471675'
-      }
-=======
+        Mpurple: '#471675',
       },
->>>>>>> 4cbae5a41ed609b9ebfc5cd244835b84bc6b7456
     },
   },
   plugins: [],
 };
-

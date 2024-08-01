@@ -41,7 +41,6 @@
       </p>
 
       <form
-        action=""
         class="form lg:w-[40%] mx-auto flex text-white flex-col items-center gap-3 [&_input]:p-4 [&_input]:rounded-lg [&_input]:bg-[#0a0a0a66] [&_input]:pl-12 [&_input]:w-full [&_label]:hover:cursor-pointer">
         <div class="w-full relative">
           <label for="email">
@@ -79,7 +78,7 @@
         <!-- <select title="Which best describes you?" class="p-4 bg-[#0a0a0a66] w-full rounded-lg hover:cursor-pointer"> -->
         <select
           id="countries"
-          class="bg-[#0a0a0a66] mb-4  text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-4"
+          class="bg-[#0a0a0a66] mb-4 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-4"
           name="desc"
           id="desc"
           required>
@@ -145,23 +144,38 @@
       <div
         class="bg-[#00000080] relative w-full overflow-hidden space-y-6 md:space-y-0 md:w-[85%] mx-auto rounded-lg text-white py-3">
         <div class="flex items-center gap-6">
-          <button class="copyBtn mx-6"><img src="/waitlist-assets/copy-icon.svg" width="33" alt="copy icon"></button>
+          <button class="copyBtn mx-6">
+            <img
+              src="/waitlist-assets/copy-icon.svg"
+              width="33"
+              alt="copy icon" />
+          </button>
           <!-- outline-0 border-0 -->
-        <input
-        class="user-code bg-transparent p-0 w-fit text-center md:text-left"
-        value="TEXJD#12345"
-        readonly="readonly"
-        type="text" />
+          <input
+            class="user-code bg-transparent border-0 p-0 w-fit text-center md:text-left"
+            value="TEXJD#12345"
+            readonly="readonly"
+            type="text" />
         </div>
         <button
           class="md:absolute top-0 right-0 bottom-0 font-semibold bg-white px-8 py-3 h-full rounded-lg text-purple">
           Share Code
         </button>
       </div>
-      <button class="modalClose mt-10 rounded-md claim">Go to Dashboard <span><img class="inline-block ms-2" width="25" src="/waitlist-assets/arrow-white.svg" alt="arrow icon"></span></button>
+      <button class="modalClose mt-10 rounded-md">
+        Go to Dashboard
+        <span
+          ><img
+            class="inline-block ms-2"
+            width="25"
+            src="/waitlist-assets/arrow-white.svg"
+            alt="arrow icon"
+        /></span>
+      </button>
     </dialog>
 
     <script>
+      // Handle form submission
       let form = document.querySelector('.form');
       let modal = document.querySelector('.modal');
       let modalClose = document.querySelector('.modalClose');
@@ -186,7 +200,7 @@
       modalClose.addEventListener('click', () => {
         modal.close();
         setTimeout(() => {
-          window.location.href = '/src/pages/home.html';
+          window.location.href = '/waitlist/vote.html';
         }, 2000);
       });
     </script>
